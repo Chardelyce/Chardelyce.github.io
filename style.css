@@ -20,7 +20,7 @@ input,select{vertical-align:middle}
     position: fixed;
     height: 100%;
     width: 100%;
-    background: #CCC;
+    background: rgb(3, 0, 0);
 	overflow: hidden;
     top: 0;
     bottom: 0;
@@ -59,7 +59,7 @@ input,select{vertical-align:middle}
     height: 28px;
 }
 .activeWindow .windowHeader {
-    background-color: #8888d6;
+    background-color: #5050fc;
 }
 .windowHeader > span {
     display: inline-block;
