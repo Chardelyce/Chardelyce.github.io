@@ -12,8 +12,24 @@
 	<script src="script.js"></script>	
 	<link rel="stylesheet" type="text/css" href="style.css" />
 	<title>Portfolio</title>
+	<style>
+		body {
+		  padding: 25px;
+		  background-color: white;
+		  color: black;
+		  font-size: 25px;
+		}
+		
+		.dark-mode {
+		  background-color: black;
+		  color: white;
+		}
+		</style>
 </head>
 <body>
+	<h2>Toggle Dark/Light Mode</h2>
+	<p>Click the button to toggle between dark and light mode for this page.</p>
+	
 	<div id="desktop">
 		<div class="window" data-title="Misc">
 			Window content
@@ -44,6 +60,14 @@
 		<a href="https://html5-templates.com/" rel="nofollow" target="_blank" id="templateLink">&copy; HTML5-Templates.com</a>	
 		<!-- You can use this template freely if you leave a visible link to HTML5-Templates.com -->
 	</div>
+	<button onclick="myFunction()">Toggle dark mode</button>
+
+<script>
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
 </body>
 
 </html>
