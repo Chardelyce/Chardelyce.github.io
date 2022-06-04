@@ -30,7 +30,7 @@ input,select{vertical-align:middle}
 .window {
     position: absolute;
     border: 2px solid #000;
-    background: #EEE;
+    background: rgb(230, 217, 217);
 	border-radius: 5px;
 	z-index: 1000;
 }
@@ -199,7 +199,7 @@ input,select{vertical-align:middle}
 	#window1 {	top: 190px;	left: -5px;	}
 }
 @media screen and (max-width:540px){
-#window0 .wincontent {	width: 230px; height: 400px;	}
+#window0 .wincontent {	width: 230px; height: 200px;	}
 #window3 .wincontent {
     width: 275px;
     height: auto;
