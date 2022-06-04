@@ -134,4 +134,5 @@ $(document).ready(function(){
 		}
     });		
 	adjustFullScreenSize();	
+	
 });
