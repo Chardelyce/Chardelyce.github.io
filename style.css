@@ -181,7 +181,7 @@ input,select{vertical-align:middle}
 }
 
 /*Demo styles BEGIN*/
-#window0 {	top: 20px;	left: 240px;}
+#window0 {	top: 20px;	right: 240px;}
 #window1 {	top: 400px; left: 120px;}
 #window2 {	top: 250px; left: 300px;}
 #window3 {	top: 125px; left: 420px;}
