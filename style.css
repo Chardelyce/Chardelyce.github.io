@@ -30,7 +30,7 @@ input,select{vertical-align:middle}
 .window {
     position: absolute;
     border: 2px solid #000;
-    background: rgb(230, 217, 217);
+    background: rgb(250, 240, 240);
 	border-radius: 5px;
 	z-index: 1000;
 }
