@@ -63,7 +63,10 @@ function openMinimized(id) {
 	}, 200, function() {
 	});				
 }
-
+function myFunction() {
+	var element = document.body;
+	element.classList.toggle("dark-mode");
+  }
 $(document).ready(function(){
 	$(".window").each(function() {      		// window template
 		$(this).css('z-index',1000)
