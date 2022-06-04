@@ -124,7 +124,7 @@ input,select{vertical-align:middle}
 }
 .taskbarPanel {
     display: inline-block;
-    border: 2px solid #000;
+    border: 2px solid rgb(80, 93, 211);
     border-radius: 5px;
     line-height: 24px;
     margin: 2px 0 0 10px;
@@ -135,7 +135,7 @@ input,select{vertical-align:middle}
 	cursor: pointer;
 }
 .taskbarPanel.activeTab {
-	background: #FFF;
+	background: rgb(80, 93, 211);
 }
 .taskbarPanel.minimizedTab {
 	background: #AAA;	
@@ -199,7 +199,7 @@ input,select{vertical-align:middle}
 	#window1 {	top: 190px;	left: -5px;	}
 }
 @media screen and (max-width:540px){
-#window0 .wincontent {	width: 230px; height: 200px;	}
+#window0 .wincontent {	width: 230px; height: 400px;	}
 #window3 .wincontent {
     width: 275px;
     height: auto;
