@@ -182,10 +182,10 @@ input,select{vertical-align:middle}
 
 /*Demo styles BEGIN*/
 #window0 {	top: 20px;	right: 240px;}
-#window1 {	top: 400px; left: 520px;}
+#window1 {	top: 400px; left: 120px;}
 #window2 {	top: 250px; left: 300px;}
 #window3 {	top: 125px; left: 420px;}
-#window4 {	top: 125px; left: 250px;}
+#window4 {	top: 125px; left: 350px;}
 #window0 .wincontent {	width: 660px; height: 400px;	}
 #window1 .wincontent {	width: 500px; height: 300px;	}
 #window2 .wincontent {	width: 400px; height: 350px;	}
