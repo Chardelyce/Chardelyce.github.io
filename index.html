@@ -21,12 +21,19 @@
 			overflow:auto;
 		}
 	</style>
+	 <script type = "text/JavaScript">
+		<!--
+		   function AutoRefresh( t ) {
+			  setTimeout("location.reload(true);", t);
+		   }
+		//-->
+	 </script>
 </head>
 
-<body>
+<body onLoad = "JavaScript:AutoRefresh(5000);">
 	<div id="desktop">
 		<div class="window" data-title="Current Projects">
-			https://reader.rssatom.com/feedid.php?id=2&last=10
+			<script type='text/javascript' charset='utf-8' src='https://scripts.hashemian.com/jss/feed.js?print=yes&numlinks=5&summarylen=50&seedate=yes&popwin=no&url=https:%2F%2FGithub.com%2Fchardelyce.atom'></script>	
 </div>
 		</div>
 		<div class="window " data-title="Upcoming Projects">
