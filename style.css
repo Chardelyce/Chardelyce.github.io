@@ -188,7 +188,7 @@ input,select{vertical-align:middle}
 #window4 {	top: 125px; left: 350px;}
 #window0 .wincontent {	width: 660px; height: 400px;	}
 #window1 .wincontent {	width: 500px; height: 300px;	}
-#window2 .wincontent {	width: 400px; height: 350px;	}
+#window2 .wincontent {	width: 600px; height: 370px;	}
 #window3 .wincontent {	width: 400px; height: 350px;	}
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}
