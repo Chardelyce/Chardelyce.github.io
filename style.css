@@ -189,7 +189,7 @@ input,select{vertical-align:middle}
 #window0 .wincontent {	width: 660px; height: 400px;	}
 #window1 .wincontent {	width: 500px; height: 350px;	}
 #window2 .wincontent {	width: 600px; height: 370px;	}
-#window3 .wincontent {	width: 400px; height: 400px;	}
+#window3 .wincontent {	width: 400px; height: 410px;	}
 @media screen and (max-width:960px){
 	#window0 {	left: 10px;	}
 	#window3 {	left: 50px;	}	
