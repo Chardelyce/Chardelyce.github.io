@@ -18,7 +18,7 @@ body {
 }
 
 .small-text {
-  color: #5b5b5b;
+  color: #064109;
   font-size: 14px;
   font-weight: bold;
   padding: 8px 16px;
@@ -40,7 +40,7 @@ a {
   transition: all 0.4s ease;
 }
 a:hover {
-  color: #ffc200 !important;
+  color: #095f0d !important;
 }
 
 .navbar-brand .uil {
@@ -92,14 +92,14 @@ b, strong {
   transition: all 0.4s ease;
 }
 .custom-btn:hover {
-  color: #ffc200;
+  color: #095f0d;
 }
 .custom-btn.custom-btn-bg {
   background: #474559;
   color: #ffffff;
 }
 .custom-btn.custom-btn-bg:hover {
-  background: #ffc200;
+  background: #1aa844;
   color: #ffffff !important;
 }
 
@@ -116,7 +116,7 @@ b, strong {
 }
 
 .animated-item {
-  color: #ffc200;
+  color: #095f0d;
 }
 
 .animated-item {
@@ -214,7 +214,7 @@ b, strong {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #095f0d;
   font-weight: bold;
 }
 .navbar-light .navbar-nav .nav-link:focus span,
@@ -296,7 +296,7 @@ b, strong {
   color: rgba(255, 255, 255, 0.8);
 }
 .dark-mode .navbar-light .navbar-nav .nav-link:hover {
-  color: #ffc200;
+  color: #095f0d;
 }
 .dark-mode .navbar[class*="headroom--not-top"] {
   background: #0c0c0d;
@@ -398,7 +398,7 @@ b, strong {
   font-size: inherit;
 }
 .owl-theme .owl-nav [class*=owl-]:hover {
-  color: #ffc200;
+  color: #095f0d;
 }
 .owl-theme .owl-dots .owl-dot {
   outline: none;
@@ -462,7 +462,7 @@ b, strong {
   margin: 5px 0;
 }
 .social-links .uil:hover {
-  color: #ffc200;
+  color: #095f0d;
 }
 
 @media (min-width: 1270px) {
