@@ -430,10 +430,10 @@ b, strong {
   height: 48px;
 }
 .contact-form .form-control:hover, .contact-form .form-control:focus {
-  border-color: #ffc200;
+  border-color: #095f0d;
 }
 .contact-form .submit-btn {
-  background: #ffc200;
+  background: #095f0d;
   border-radius: 50px;
   color: #ffffff;
   font-weight: bold;
