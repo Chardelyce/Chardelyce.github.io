@@ -569,5 +569,5 @@ b, strong {
   }
   @import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
-  
+  .circular--square { border-radius: 50%; }
 }
