@@ -397,7 +397,7 @@ textarea.form-control {
 .navbar .navbar-nav > .nav-item.current-menu-ancestor > a.dropdown-toggle {
   background-color: transparent;
   outline: 0;
-  color: #000000;
+  color: #a3d4d6;
   transition: all 0.3s ease;
 }
 
@@ -521,7 +521,7 @@ textarea.form-control {
     left: 0;
     min-width: 250px;
     display: none;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(182, 233, 235);
   }
   /**:: Second Dropdown ::**/
   .navbar .navbar-collapse ul ul li {
@@ -536,7 +536,7 @@ textarea.form-control {
     left: 100%;
     min-width: 250px;
     display: none;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(182, 233, 235);
   }
   /**:: Third Dropdown ::**/
   .navbar .navbar-collapse ul ul ul li {
@@ -552,7 +552,7 @@ textarea.form-control {
     min-width: 250px;
     display: none;
     z-index: 1;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(182, 233, 235);
   }
   /**:: Fourth Dropdown ::**/
   .navbar .navbar-collapse ul ul ul ul li {
@@ -568,7 +568,7 @@ textarea.form-control {
     min-width: 250px;
     display: none;
     z-index: 1;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(182, 233, 235);
   }
 }
 
