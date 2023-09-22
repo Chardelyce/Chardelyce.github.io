@@ -17,23 +17,7 @@ p {
   line-height: 25px;
 }
 
-video { 
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    transform: translateX(-50%) translateY(-50%);
-    background-size: cover;
-    transition: 1s opacity;
-}
 
-video::-webkit-media-controls {
-    display:none !important;
-}
 
 
 }
@@ -596,11 +580,12 @@ footer {
   bottom: 0;
   z-index: 2;
   margin-top: -1px;
+  text-align: center;
 }
 
 footer p {
   font-size: 13px;
-  color: #000000;
+  color: #ffffff;
   margin: 0px;
   padding: 25px 0px;
   text-align: center;
