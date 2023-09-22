@@ -48,7 +48,7 @@ video::-webkit-media-controls {
 .primary-button a {
   display: inline-block;
   background-color: #000000;
-  color: #343434;
+  color: #000000;
   font-size: 13px;
   padding: 12px 18px;
   border-radius: 3px;
@@ -283,7 +283,7 @@ video::-webkit-media-controls {
 .second-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffbb05;
+  color: #ffffff;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -400,7 +400,7 @@ video::-webkit-media-controls {
 .third-content .right-feature-text h4 em {
   font-style: normal;
   font-weight: 700;
-  color: #ffbb05;
+  color: #ffffff;
 }
 
 .third-content .feature-list {
@@ -445,7 +445,7 @@ video::-webkit-media-controls {
 .fourth-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffbb05;
+  color: #ffffff;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -525,7 +525,7 @@ video::-webkit-media-controls {
 }
 
 .fivth-content .left-info i:hover {
-  background-color: #ffbb05;
+  background-color: #ffffff;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
