@@ -13,7 +13,6 @@
 
 
 
-
 // Uses Node, AMD or browser globals to create a module.
 (function (root, factory) {
     if (typeof define === 'function' && define.amd) {
