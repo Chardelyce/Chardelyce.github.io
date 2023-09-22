@@ -578,7 +578,7 @@ video::-webkit-media-controls {
 .fivth-content button {
   display: inline-block;
   background-color: #000000;
-  color: #343434;
+  color: #000000;
   font-size: 13px;
   padding: 12px 18px;
   border-radius: 3px;
@@ -614,7 +614,7 @@ footer {
 
 footer p {
   font-size: 13px;
-  color: #343434;
+  color: #000000;
   margin: 0px;
   padding: 25px 0px;
   text-align: center;
@@ -627,7 +627,7 @@ footer p em {
 }
 
 footer a {
-	color: #343434;
+	color: #000000;
 }
 
 /*
@@ -941,7 +941,7 @@ body.lb-disable-scrolling {
   clear: left;
   padding-bottom: 1em;
   font-size: 12px;
-  color: #999999;
+  color: #000000;
 }
 
 .lb-data .lb-close {
