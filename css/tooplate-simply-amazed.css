@@ -10,6 +10,17 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%;
 }
+/* Add this CSS code to your stylesheet */
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place the canvas behind other elements */
+    pointer-events: none; /* Prevent interactions with the canvas */
+    width: 100%; /* Make the canvas cover the entire container */
+    height: 100%; /* Make the canvas cover the entire container */
+}
+
 
 ol:after,
 ul:after {
