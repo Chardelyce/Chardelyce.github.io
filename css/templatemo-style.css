@@ -12,7 +12,7 @@ body {
 
 p {
   font-size: 14px;
-  color: #5a5a5a;
+  color: #000000;
   font-weight: 300;
   line-height: 25px;
 }
@@ -47,7 +47,7 @@ video::-webkit-media-controls {
 
 .primary-button a {
   display: inline-block;
-  background-color: #ffbb05;
+  background-color:#000000;
   color: #343434;
   font-size: 13px;
   padding: 12px 18px;
@@ -58,7 +58,7 @@ video::-webkit-media-controls {
 
 .primary-button a:hover {
   background-color: transparent;
-  border: 1px solid #ffbb05;
+  border: 1px solid #000000;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -149,7 +149,7 @@ video::-webkit-media-controls {
 }
 
 .cd-slider-nav ul .selected h6 {
-  color: #ffbb05;
+  color: #000000;
   text-decoration: none;
 }
 
@@ -164,7 +164,7 @@ video::-webkit-media-controls {
   text-align: center;
   margin: 0px;
   padding: 0px;
-  background-color: #ffbb05;
+  background-color: #000000;
 }
 
 .cd-slider-nav .image-icon:hover {
@@ -178,7 +178,7 @@ video::-webkit-media-controls {
   margin-bottom: 100px;
   margin-top: -80px;
   background-color: #fff;
-  border-top: 15px solid #ffbb05;
+  border-top: 15px solid #000000;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -231,7 +231,7 @@ video::-webkit-media-controls {
 .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffbb05;
+  color: #000000;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -283,7 +283,7 @@ video::-webkit-media-controls {
 .second-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffbb05;
+  color: #000000;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -365,7 +365,7 @@ video::-webkit-media-controls {
 .third-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffbb05;
+  color: #000000;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -400,7 +400,7 @@ video::-webkit-media-controls {
 .third-content .right-feature-text h4 em {
   font-style: normal;
   font-weight: 700;
-  color: #ffbb05;
+  color: #000000;
 }
 
 .third-content .feature-list {
@@ -445,7 +445,7 @@ video::-webkit-media-controls {
 .fourth-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffbb05;
+  color: #000000;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -488,7 +488,7 @@ video::-webkit-media-controls {
 .fivth-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffbb05;
+  color: #000000;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -517,7 +517,7 @@ video::-webkit-media-controls {
   font-size: 15px;
   width: 34px;
   height: 34px;
-  background-color: #cdcdcd;
+  background-color: #000000;
   display: inline-block;
   border-radius: 50%;
   text-align: center;
@@ -525,7 +525,7 @@ video::-webkit-media-controls {
 }
 
 .fivth-content .left-info i:hover {
-  background-color: #ffbb05;
+  background-color: #000000;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -540,7 +540,7 @@ video::-webkit-media-controls {
   line-height: 40px;
   font-size: 13px;
   color: #aaa;
-  background-color: #f4f4f4;
+  background-color: #000000;
   border: none;
   outline: none;
   border-radius: 0;
@@ -563,7 +563,7 @@ video::-webkit-media-controls {
   line-height: 40px;
   font-size: 13px;
   color: #aaa;
-  background-color: #f4f4f4;
+  background-color: #000000;
   border: none;
   outline: none!important;
   border-radius: 0;
@@ -577,7 +577,7 @@ video::-webkit-media-controls {
 
 .fivth-content button {
   display: inline-block;
-  background-color: #ffbb05;
+  background-color: #000000;
   color: #343434;
   font-size: 13px;
   padding: 12px 18px;
@@ -589,7 +589,7 @@ video::-webkit-media-controls {
 
 .fivth-content button:hover {
   background-color: transparent;
-  border: 1px solid #ffbb05;
+  border: 1px solid #000000;
   -moz-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
@@ -604,7 +604,7 @@ video::-webkit-media-controls {
 */
 
 footer {
-  background-color: #ffbb05;
+  background-color: #000000;
   position: relative;
   width: 100%;
   bottom: 0;
@@ -652,7 +652,7 @@ footer a {
   }
 
   .cd-slider-nav ul .selected img {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #000000;
     padding-bottom: 10px;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -667,7 +667,7 @@ footer a {
   }
 
   .cd-slider-nav {
-    background-color: #ffbb05;
+    background-color: #000000;
     width: 100%;
     height: 80px;
     line-height: 80px;
@@ -702,8 +702,8 @@ footer a {
   .content {
     margin-bottom: 100px;
     margin-top: -100px;
-    background-color: #fff;
-    border-top: 15px solid #ffbb05;
+    background-color: #000000;
+    border-top: 15px solid #000000;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   }
 
@@ -791,7 +791,7 @@ body.lb-disable-scrolling {
   border-radius: 3px;
 
   /* Image border */
-  border: 4px solid white;
+  border: 4px solid rgb(0, 0, 0);
 }
 
 .lightbox a img {
@@ -808,7 +808,7 @@ body.lb-disable-scrolling {
 
   /* Background color behind image.
      This is visible during transitions. */
-  background-color: white;
+  background-color: rgb(0, 0, 0);
 }
 
 .lb-outerContainer:after {
