@@ -7,7 +7,7 @@ https://templatemo.com/tm-503-newline
 */
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: black; /* Change background color to black */
+ /* background-color: black; /* Change background color to black */
 }
 
 p {
@@ -964,7 +964,7 @@ canvas {
 /* ---- particles.js container ---- */
 
 #particles-js {
-  /*z-index: 999;*/
+  z-index: 999;
    position: absolute;
   width: 100%;
   height: 100%;
