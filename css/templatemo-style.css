@@ -35,14 +35,7 @@ video::-webkit-media-controls {
     display:none !important;
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  background-color: rgba(0,0,0,0.75); /*dim the background*/
+
 }
 
 .primary-button a {
@@ -174,13 +167,6 @@ video::-webkit-media-controls {
   -webkit-transition: all 0.2s linear;
 }
 
-.content {
-  margin-bottom: 100px;
-  margin-top: -80px;
-  background-color: #fff;
-  border-top: 15px solid #000000;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
-}
 
 
 /*
@@ -239,7 +225,7 @@ video::-webkit-media-controls {
 .first-content h4 {
   font-size: 19px;
   text-transform: uppercase;
-  color: #121212;
+  color: #000000;
   letter-spacing: 1px;
   margin-top: 0px;
   margin-bottom: 30px;
@@ -309,7 +295,7 @@ video::-webkit-media-controls {
 
 .second-slide .right-about-text h4 {
   font-size: 19px;
-  color: #121212;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 30px;
@@ -328,7 +314,7 @@ video::-webkit-media-controls {
 
 .second-slide .left-about-text h4 {
   font-size: 19px;
-  color: #121212;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 30px;
@@ -390,7 +376,7 @@ video::-webkit-media-controls {
 
 .third-content .right-feature-text h4 {
   font-size: 19px;
-  color: #121212;
+  color: #000000;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-top: 30px;
@@ -400,7 +386,7 @@ video::-webkit-media-controls {
 .third-content .right-feature-text h4 em {
   font-style: normal;
   font-weight: 700;
-  color: #ffffff;
+  color: #000000;
 }
 
 .third-content .feature-list {
@@ -437,7 +423,7 @@ video::-webkit-media-controls {
   margin-top: 30px;
   font-size: 38px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000000;
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -445,7 +431,7 @@ video::-webkit-media-controls {
 .fourth-slide .heading span {
   font-size: 16px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: #000000;
   font-weight: 300;
   letter-spacing: 0.5px;
 }
@@ -472,7 +458,7 @@ video::-webkit-media-controls {
 
 .fivth-slide {
   text-align: center;
-  background-color: #fff;
+  background-color: #000000;
   width: 100%;
 }
 
@@ -480,7 +466,7 @@ video::-webkit-media-controls {
   margin-top: 30px;
   font-size: 38px;
   text-transform: uppercase;
-  color: #fff;
+  color: #000000;
   font-weight: 900;
   letter-spacing: 1px;
 }
@@ -513,7 +499,7 @@ video::-webkit-media-controls {
 
 .fivth-content .left-info i {
   margin-right: 10px;
-  color: #fff;
+  color: #000000;
   font-size: 15px;
   width: 34px;
   height: 34px;
@@ -525,7 +511,7 @@ video::-webkit-media-controls {
 }
 
 .fivth-content .left-info i:hover {
-  background-color: #ffffff;
+  background-color: #000000;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
   -webkit-transition: all 0.3s linear;
@@ -562,7 +548,7 @@ video::-webkit-media-controls {
   display: inline-block;
   line-height: 40px;
   font-size: 13px;
-  color: #aaa;
+  color: #000000;
   background-color: #000000;
   border: none;
   outline: none!important;
@@ -578,7 +564,7 @@ video::-webkit-media-controls {
 .fivth-content button {
   display: inline-block;
   background-color: #ffbb05;
-  color: #343434;
+  color: #000000;
   font-size: 13px;
   padding: 12px 18px;
   border-radius: 3px;
@@ -652,7 +638,7 @@ footer a {
   }
 
   .cd-slider-nav ul .selected img {
-    border-bottom: 3px solid #fff;
+    border-bottom: 3px solid #000000;
     padding-bottom: 10px;
     -moz-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
@@ -702,7 +688,7 @@ footer a {
   .content {
     margin-bottom: 100px;
     margin-top: -100px;
-    background-color: #fff;
+    background-color: #000000;
     border-top: 15px solid #000000;
     box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
   }
@@ -916,7 +902,7 @@ body.lb-disable-scrolling {
 
 .lb-data {
   padding: 0 4px;
-  color: #ccc;
+  color: #000000;
 }
 
 .lb-data .lb-details {
