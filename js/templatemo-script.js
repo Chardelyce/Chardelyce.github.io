@@ -148,7 +148,7 @@ jQuery(document).ready(function() {
         ]
         
     });
-    
+  
     $(".navbar-button").click(function(e){
         e.stopPropagation();
         $(".header").toggleClass("open");
