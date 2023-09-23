@@ -83,6 +83,31 @@ function animate() {
 }
 
 animate();
+$(document).ready(function () {
+  $(".scroll-to").on("click", function (event) {
+    event.preventDefault();
+    var target = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(target).offset().top
+    }, 800); // Adjust the animation duration as needed
+  });
+});
+
+$(document).ready(function () {
+  // Select all anchor links except those with the class "no-smooth-scroll"
+  $('a[href*="#"]:not(.no-smooth-scroll)').click(function(event) {
+    event.preventDefault();
+    
+    // Get the target element's ID from the href attribute
+    var target = $(this).attr("href");
+    
+    // Animate the scroll to the target element's position
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 800); // Adjust the animation duration as needed
+  });
+});
+
 
 jQuery(document).ready(function() {
   "use strict";
