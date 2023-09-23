@@ -93,6 +93,20 @@ $(document).ready(function () {
   });
 });
 
+$(document).ready(function () {
+  $(".scroll-to").on("click", function (event) {
+    event.preventDefault();
+    var target = $(this).attr("href");
+    // Check if the clicked link has the "no-smooth-scroll" class
+    if (!$(this).hasClass("no-smooth-scroll")) {
+      $("html, body").animate({
+        scrollTop: $(target).offset().top
+      }, 800); // Adjust the animation duration as needed
+    }
+  });
+});
+
+
 jQuery(document).ready(function() {
   "use strict";
     $('.gallery-slider').slick({
