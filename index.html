@@ -12,24 +12,33 @@
     <link rel="stylesheet" href="css/tooplate-simply-amazed.css" type="text/css" />
     <link rel="stylesheet" href="styles.css">
     <style>
-        /* Add your custom styles here */
-        .banner-section {
-            position: relative;
-        }
+       body {
+    margin: 0;
+    overflow: hidden;
+  background-color:
+    black;
+}
 
-        .banner-content {
-            background-color: rgba(173, 216, 230, 0.7); /* Light blue with transparency */
-            padding: 20px;
-            border-radius: 10px;
-            text-align: center;
-        }
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-        .banner-content h2,
-        .banner-content h3 {
-            color: #fff; /* White text color */
-            font-size: 24px;
-            font-weight: bold;
-        }
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(148, 224, 250, 0.753); /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff; /* Text color: white */
+    text-align: center;
+    max-width: 80%;
+    box-sizing: border-box;
+}
+
     </style>
 </head>
 
@@ -65,16 +74,10 @@
         </button>
        
         <main id="content-box" class="order-first">
-            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-bg.jpg" id="section-1">
-                <canvas id="canvas"></canvas>
-                 <div class="container">
-                    <div class="item">
-                        <div class="banner-content">
-                            <h2>Developer | Database Analyst | Inventor</h2>
-                            <h3>Charde'Lyce Edwards</h3>
-                        </div>
-                    </div>
-                </div>
+            <canvas id="canvas"></canvas>
+            <div class="text-container">
+                <p>Developer| Database Analyst| Inventor </p>
+                <h3> Charde'lyce Edwards</h3>
             </div>
         
             <section class="work-section section" id="section-2">
