@@ -94,15 +94,17 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  $(".scroll-to").on("click", function (event) {
+  // Select all anchor links except those with the class "no-smooth-scroll"
+  $('a[href*="#"]:not(.no-smooth-scroll)').click(function(event) {
     event.preventDefault();
+    
+    // Get the target element's ID from the href attribute
     var target = $(this).attr("href");
-    // Check if the clicked link has the "no-smooth-scroll" class
-    if (!$(this).hasClass("no-smooth-scroll")) {
-      $("html, body").animate({
-        scrollTop: $(target).offset().top
-      }, 800); // Adjust the animation duration as needed
-    }
+    
+    // Animate the scroll to the target element's position
+    $('html, body').animate({
+      scrollTop: $(target).offset().top
+    }, 800); // Adjust the animation duration as needed
   });
 });
 
