@@ -27,8 +27,16 @@ body {
 
 body {
   margin: 0;
-  overflow: auto;
+  overflow: hidden;
 }
+/* ... (your existing CSS code) ... */
+
+#canvas-container {
+  position: relative;
+  overflow: auto; /* Enable scrolling within the container */
+  height: 100vh; /* Set the height to viewport height for full-screen scrolling */
+}
+
 
 canvas {
   position: relative;
