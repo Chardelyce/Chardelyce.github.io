@@ -1,13 +1,7 @@
-const canvas = document.getElementById("myCanvas");
-const container = document.getElementById("canvas-container");
-const ctx = canvas.getContext("2d");
-
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
-
-window.addEventListener("resize", resizeCanvas); // Resize canvas on window resize
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 
 const particles = [];
 const maxParticles = 100;
@@ -89,7 +83,6 @@ function animate() {
 }
 
 animate();
-
 $(document).ready(function () {
   $(".scroll-to").on("click", function (event) {
     event.preventDefault();
@@ -100,20 +93,6 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  // Select all anchor links except those with the class "no-smooth-scroll"
-  $('a[href*="#"]:not(.no-smooth-scroll)').click(function(event) {
-    event.preventDefault();
-    
-    // Get the target element's ID from the href attribute
-    var target = $(this).attr("href");
-    
-    // Animate the scroll to the target element's position
-    $('html, body').animate({
-      scrollTop: $(target).offset().top
-    }, 800); // Adjust the animation duration as needed
-  });
-});
 
 
 jQuery(document).ready(function() {
