@@ -26,10 +26,6 @@ canvas {
 .scroll-to {
   transition: 0.5s ease-in-out;
 }
-#content-wrapper {
-  height: 100vh; /* Set the height to fill the viewport */
-  overflow-y: scroll; /* Enable vertical scrolling */
-}
 
 
 .text-container {
