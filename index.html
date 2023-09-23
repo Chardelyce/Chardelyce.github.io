@@ -26,6 +26,17 @@
             font-weight: bold;
         }
     </style>
+
+<script>
+    function checkPageStatus() {
+        if (!document.getElementById('content')) {
+            
+            location.reload();
+        }
+    }
+ window.onload = checkPageStatus;
+ 
+</script>
 </head>
 
 <body>
