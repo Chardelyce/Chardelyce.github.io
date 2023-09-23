@@ -33,7 +33,7 @@ canvas {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(173, 216, 230, 0.7); /* Semi-transparent black background */
+  background-color: rgba(75, 210, 255, 0.7); /* Semi-transparent black background */
   padding: 20px;
   border-radius: 10px;
   color: #fff; /* Text color: white */
