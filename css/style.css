@@ -22,3 +22,7 @@ canvas {
     max-width: 80%;
     box-sizing: border-box;
 }
+#section-1 img {
+    opacity: 0;
+}
+
