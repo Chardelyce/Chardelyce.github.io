@@ -83,6 +83,15 @@ function animate() {
 }
 
 animate();
+$(document).ready(function () {
+  $(".scroll-to").on("click", function (event) {
+    event.preventDefault();
+    var target = $(this).attr("href");
+    $("html, body").animate({
+      scrollTop: $(target).offset().top
+    }, 800); // Adjust the animation duration as needed
+  });
+});
 
 jQuery(document).ready(function() {
   "use strict";
