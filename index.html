@@ -63,8 +63,14 @@
             </span>
         </button>
         <main id="content-box" class="order-first">
-            <div class="banner-section section parallax-window" data-parallax="scroll" data-image-src="img/section-1-bg.jpg" id="section-1">
-                <div class="container">
+            <section class="banner-section section parallax-window" data-parallax="scroll">
+                <!-- Use the <video> element for the background video -->
+                <video autoplay muted loop poster="img/section-1-bg.jpg" id="background-video">
+                    <source src="bckgrnd.mp4" type="video/mp4">
+                    <!-- Add additional video sources for different formats if needed -->
+                    Your browser does not support the video tag.
+                </video>
+                   <div class="container">
                     <div class="item">
                         <div class="banner-content">
                             <h2>Developer | Database Analyst | Inventor</h2>
