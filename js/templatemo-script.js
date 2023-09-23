@@ -1,7 +1,13 @@
-const canvas = document.getElementById('canvas');
-const ctx = canvas.getContext('2d');
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
+const canvas = document.getElementById("myCanvas");
+const container = document.getElementById("canvas-container");
+const ctx = canvas.getContext("2d");
+
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+
+window.addEventListener("resize", resizeCanvas); // Resize canvas on window resize
 
 const particles = [];
 const maxParticles = 100;
@@ -83,6 +89,7 @@ function animate() {
 }
 
 animate();
+
 $(document).ready(function () {
   $(".scroll-to").on("click", function (event) {
     event.preventDefault();
