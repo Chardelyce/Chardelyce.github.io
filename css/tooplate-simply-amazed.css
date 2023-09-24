@@ -953,7 +953,7 @@ figure.effect-julia:hover p {
 }
 
 @media (max-width: 767px) {
-  .gallery-section .title { margin-bottom: 40px; }
+  .gallery-section .title { margin-bottom: 50px; }
 }
 
 .gallery-section .title h2 { color: #006699; }
@@ -961,7 +961,7 @@ figure.effect-julia:hover p {
 
 .gallery-section .item {
   text-align: center;
-  margin: 5px;
+  margin: 1px;
 }
 
 .gallery-section .slick-dots {
@@ -970,7 +970,7 @@ figure.effect-julia:hover p {
 }
 
 .gallery-section .slick-dots li {
-  background-color: #000000;
+  background-color: #5e5b5b;
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -980,7 +980,7 @@ figure.effect-julia:hover p {
 
 .gallery-section .slick-dots li.slick-active,
 .gallery-section .slick-dots li:hover {
-  background-color: #000000;
+  background-color: #5e5b5b;
 }
 
 .gallery-section .slick-dots li button { display: none; }
