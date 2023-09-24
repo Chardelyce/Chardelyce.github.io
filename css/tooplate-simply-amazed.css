@@ -16,7 +16,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(75, 210, 255, 0.7); /* Semi-transparent black background */
+  background-color: hsla(195, 100%, 65%, 0.7); /* Semi-transparent black background */
   padding: 20px;
   border-radius: 10px;
   color: #fff; /* Text color: white */
@@ -897,8 +897,8 @@ figure.effect-julia h2 {
 
 figure.effect-julia p {
 	display: inline-block;
-	margin: 0 0 0.15em;
-	padding: 0.2em 1em;
+	margin: 0 0 0.25em;
+	padding: 0.4em 1em;
 	background: rgba(255,255,255,0.9);
 	color: #000000;
 	text-transform: none;
@@ -953,7 +953,7 @@ figure.effect-julia:hover p {
 }
 
 @media (max-width: 767px) {
-  .gallery-section .title { margin-bottom: 50px; }
+  .gallery-section .title { margin-bottom: 40px; }
 }
 
 .gallery-section .title h2 { color: #006699; }
@@ -961,7 +961,7 @@ figure.effect-julia:hover p {
 
 .gallery-section .item {
   text-align: center;
-  margin: 1px;
+  margin: 5px;
 }
 
 .gallery-section .slick-dots {
@@ -970,7 +970,7 @@ figure.effect-julia:hover p {
 }
 
 .gallery-section .slick-dots li {
-  background-color: #5e5b5b;
+  background-color: #000000;
   width: 20px;
   height: 20px;
   border-radius: 100%;
@@ -980,7 +980,7 @@ figure.effect-julia:hover p {
 
 .gallery-section .slick-dots li.slick-active,
 .gallery-section .slick-dots li:hover {
-  background-color: #5e5b5b;
+  background-color: #000000;
 }
 
 .gallery-section .slick-dots li button { display: none; }
@@ -999,8 +999,8 @@ figure.effect-julia:hover p {
 }
 
 .contact-section .contact-form .form-group { margin-bottom: 24px; }
-.tm-contact-item-inner { max-width: 460px; }
-.tm-contact-item-inner-2 { max-width: 430px; }
+.tm-contact-item-inner { max-width: 360px; }
+.tm-contact-item-inner-2 { max-width: 330px; }
 
 .tm-contact-item-inner,
 .tm-contact-item-inner-2 {
