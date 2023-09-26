@@ -881,116 +881,7 @@ textarea.form-control {
 /***** Julia *****/
 /*---------------*/
 
-figure.effect-julia {
-	background: #000000;
-}
 
-figure.effect-julia img {
-	-webkit-transition: opacity 1s, -webkit-transform 1s;
-	transition: opacity 1s, transform 1s;
-	-webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-}
-
-figure.effect-julia figcaption {
-	display: flex;
-  align-items: center;
-}
-
-figure.effect-julia h2 {
-	position: relative;
-	padding: 0.5em 0;
-}
-
-figure.effect-julia p {
-	display: inline-block;
-	margin: 0 0 0.25em;
-	padding: 0.4em 1em;
-	background: rgba(255,255,255,0.9);
-	color: #000000;
-	text-transform: none;
-	font-weight: 500;
-	font-size: 75%;
-	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-	transition: opacity 0.35s, transform 0.35s;
-	-webkit-transform: translate3d(-360px,0,0);
-	transform: translate3d(-360px,0,0);
-}
-
-figure.effect-julia p:first-child {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
-}
-
-figure.effect-julia p:nth-of-type(2) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-figure.effect-julia p:nth-of-type(3) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-figure.effect-julia:hover p:first-child {
-	-webkit-transition-delay: 0s;
-	transition-delay: 0s;
-}
-
-figure.effect-julia:hover p:nth-of-type(2) {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-figure.effect-julia:hover p:nth-of-type(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-figure.effect-julia:hover img {
-	opacity: 0.4;
-	-webkit-transform: scale3d(1.1,1.1,1);
-	transform: scale3d(1.1,1.1,1);
-}
-
-figure.effect-julia:hover p {
-	opacity: 1;
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-@media (max-width: 767px) {
-  .gallery-section .title { margin-bottom: 40px; }
-}
-
-.gallery-section .title h2 { color: #006699; }
-.gallery-section .slick-list { margin-bottom: 40px; }
-
-.gallery-section .item {
-  text-align: center;
-  margin: 5px;
-}
-
-.gallery-section .slick-dots {
-  position: unset;
-  bottom: 0;
-}
-
-.gallery-section .slick-dots li {
-  background-color: #000000;
-  width: 20px;
-  height: 20px;
-  border-radius: 100%;
-  margin: 0 10px;
-  transition: all 0.3s ease;
-}
-
-.gallery-section .slick-dots li.slick-active,
-.gallery-section .slick-dots li:hover {
-  background-color: #000000;
-}
-
-.gallery-section .slick-dots li button { display: none; }
 
 .contact-section {
   background-color: #000000;
@@ -1057,18 +948,6 @@ figure.effect-julia:hover p {
 .contact-section .contact-details ul li a:hover { color: #99ccff; }
 .contact-section .map { text-align: center; }
 
-.map-outer{
-  position:relative;
-  height:400px;
-  width:100%;
-}
-
-.gmap-canvas {
-  overflow:hidden;
-  background:none!important;
-  height:400px;
-  width:100%;
-}
 
 /* <<< footer >>> */
 .footer {

@@ -4,7 +4,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 const particles = [];
-const maxParticles = 100;
+const maxParticles = 80;
 const minDistance = 150;
 
 class Particle {
