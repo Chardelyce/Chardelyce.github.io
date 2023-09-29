@@ -12,7 +12,7 @@ html {
 }
 body {
   font-family: Roboto, Helvetica, Arial, sans-serif;
-  background-color: #4e657a;
+  background-color: #000000;
   overflow-x: hidden;
 }
 a {
@@ -30,7 +30,7 @@ button:focus {
   align-items: center;
 }
 .tm-site-icon {
-  color: #656565;
+  color: #000000;
 }
 .tm-site-title {
   display: inline-block;
@@ -116,7 +116,7 @@ button:focus {
 .dropdown-menu {
   font-size: 90%;
   color: #fff;
-  background-color: #567086;
+  background-color: #000000;
   border-radius: 0;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -128,7 +128,7 @@ button:focus {
 }
 .navbar-nav .active > .nav-link,
 .navbar-nav .nav-link.active {
-  background-color: #f5a623;
+  background-color: #929291;
   color: #fff;
 }
 .navbar-nav .nav-link.active i {
@@ -136,11 +136,11 @@ button:focus {
 }
 .dropdown-item:focus,
 .dropdown-item:hover {
-  background-color: #567086;
+  background-color: #265279;
 }
 .navbar-nav a:hover,
 .navbar-nav a:hover i {
-  color: #f5a623;
+  color: #ffffff;
 }
 .nav-item {
   text-align: center;
@@ -184,7 +184,7 @@ button:focus {
 }
 .tm-notification-item {
   padding: 15px;
-  background-color: #4e657a;
+  background-color: #000000;
   color: #fff;
   font-size: 95%;
   margin-bottom: 15px;
@@ -202,13 +202,13 @@ button:focus {
   font-size: 90%;
 }
 .table {
-  background-color: #50697f;
+  background-color: #000000;
   color: #fff;
   font-size: 85%;
   margin-bottom: 0;
 }
 thead {
-  background-color: #486177;
+  background-color: #000000;
   color: #fff;
 }
 .table thead th {
@@ -278,12 +278,12 @@ thead {
   padding-right: 15px;
 }
 .form-control {
-  background-color: #54657d;
+  background-color: #000000;
   color: #fff;
   border: 0;
 }
 .form-control:focus {
-  background-color: #60738e;
+  background-color: #000000;
   color: #fff;
   border-color: transparent;
   box-shadow: 0 0 0 0.1rem rgb(180, 206, 233, 0.5);
@@ -358,7 +358,7 @@ thead {
 }
 .table td,
 .table th {
-  border-top: 1px solid #415a70;
+  border-top: 1px solid #000000;
   padding: 15px 25px;
   vertical-align: middle;
 }
@@ -374,7 +374,7 @@ thead {
   color: #a0c0de;
 }
 .tm-bg-primary-dark {
-  background-color: #435c70;
+  background-color: #000000;
 }
 .tm-bg-gray {
   background-color: rgba(0, 0, 0, 0.05);
@@ -412,7 +412,7 @@ input[type="checkbox"] {
   cursor: pointer;
   -webkit-appearance: none;
   appearance: none;
-  background-color: #394e64;
+  background-color: #4d6279;
   background-position: center;
   border-radius: 50%;
   box-sizing: border-box;
@@ -454,7 +454,7 @@ input[type="checkbox"]:focus {
 .tm-product-delete-link {
   padding: 10px;
   border-radius: 50%;
-  background-color: #394e64;
+  background-color: #7f96af;
   display: inline-block;
   width: 40px;
   height: 40px;
@@ -492,7 +492,7 @@ input[type="checkbox"]:focus {
   color: #9f1321;
 }
 .tm-footer {
-  background-color: #567086;
+  background-color: #000000;
   padding-top: 30px;
   padding-bottom: 30px;
   -webkit-box-shadow: 0 -3px 5px 0 rgba(69, 92, 113, 0.59);
@@ -536,7 +536,7 @@ input[type="checkbox"]:focus {
   max-width: 470px;
 }
 .navbar-toggler {
-  border-color: #708da8;
+  border-color: #000000;
   box-shadow: rgba(255, 255, 255, 0.1) 0 1px 1px 2px;
   border-radius: 0;
   padding: 10px 15px;
@@ -618,7 +618,7 @@ input[type="checkbox"]:focus {
   }
   .nav-link {
     color: #fff;
-    background-color: #567086;
+    background-color: #000000;
     padding: 15px;
     flex-direction: row;
   }
