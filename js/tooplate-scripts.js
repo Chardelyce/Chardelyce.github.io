@@ -54,30 +54,15 @@ function fetchGitHubActivity() {
 }
 
 // Call the function to fetch and display GitHub activity
+fetchGitHubActivity();
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
 const particles = [];
 const maxParticles = 100;
 const minDistance = 150;
-
-// Define particle colors for both light and dark modes
-const lightModeColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
-const darkModeColors = ['#FFFFFF', '#FFD700', '#00FF7F', '#87CEEB', '#FF69B4', '#800080', '#00CED1'];
-
-// Function to get the current system color scheme (light or dark)
-function getSystemColorScheme() {
-    return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-}
-
-// Function to generate a random color based on the color scheme
-function getRandomColor() {
-    const colorScheme = getSystemColorScheme();
-    const colors = colorScheme === 'dark' ? darkModeColors : lightModeColors;
-    return colors[Math.floor(Math.random() * colors.length)];
-}
-
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
 
 class Particle {
   constructor(x, y, color) {
@@ -118,7 +103,8 @@ class Particle {
 for (let i = 0; i < maxParticles; i++) {
   const x = Math.random() * canvas.width;
   const y = Math.random() * canvas.height;
-  const color = getRandomColor();
+  const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
+  const color = colors[Math.floor(Math.random() * colors.length)];
   const particle = new Particle(x, y, color);
   particles.push(particle);
 }
@@ -255,7 +241,7 @@ jQuery(document).ready(function() {
 const width_threshold = 480;
 
 function toggleMenu() {
-  var menu = document.querySelector('.menu');
-  menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    var menu = document.querySelector('.menu');
+    menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
 }
 
