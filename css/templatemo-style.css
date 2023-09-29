@@ -48,7 +48,10 @@ pre {
   border-left: 10px solid #ccc;
   max-width: 500px;
 }
-
+.smaller-font {
+  font-size: 0.9em; /* Adjust the font size as needed */
+  color: #4bd2ffb3; /* You can keep the color or modify it */
+}
 /* <<< Headings >>> */
 h1 { font-size: 40px; }
 h2 { font-size: 32px; }
