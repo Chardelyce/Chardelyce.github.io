@@ -1487,15 +1487,10 @@ pre {
   max-width: 500px;
 }
 .smaller-font {
-  font-size: 0.9em; /* Adjust the font size as needed */
+  font-size: 1em; /* Adjust the font size as needed */
   color: #ffffff; /* You can keep the color or modify it */
 }
-.rounded-image-frame {
-  border-radius: 50%; /* This creates a circular frame */
-  overflow: hidden; /* This hides any overflow from the image */
-  width: 200px; /* Adjust the width and height to fit your design */
-  height: 200px;
-}
+
 
 /* <<< Headings >>> */
 h1 { font-size: 40px; }
