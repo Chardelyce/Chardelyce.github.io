@@ -193,7 +193,7 @@ button:focus {
   margin-bottom: 0;
 }
 .tm-notification-link {
-  color: #f5a623;
+  color: #95aeb8;
 }
 .tm-text-color-secondary {
   color: #bdcbd8;
@@ -550,7 +550,7 @@ input[type="checkbox"]:focus {
   color: #fff;
 }
 .navbar-toggler:hover .tm-nav-icon {
-  color: #f5a623;
+  color: #cecbc7;
 }
 ::-webkit-scrollbar {
   width: 8px;
