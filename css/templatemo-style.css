@@ -18,22 +18,7 @@ https://templatemo.com/tm-524-product-admin
   z-index: -1; /* This places the canvas container behind other elements */
 }
 
-/* Style for each notification item */
-.tm-notification-item {
-  background-color: black;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 10px;
-  margin-bottom: 10px; /* Spacing between notification items */
-  display: flex;
-  align-items: center; /* Center vertically */
-}
 
-/* Style for the text content inside each notification item */
-.tm-notification-item p {
-  color: white;
-  margin: 0;
-}
 html {
   font-size: 16px;
   overflow-x: hidden;
