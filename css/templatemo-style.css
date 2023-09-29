@@ -19,7 +19,16 @@ https://templatemo.com/tm-524-product-admin
   z-index: -1; /* This places the canvas container behind other elements */
 }
 
+@media (max-width: 767px) {
+  .canvas-container {
+      width: 100%; /* Set the canvas container to full width */
+      text-align: center; /* Center the canvas */
+  }
 
+  canvas {
+      max-width: 100%; /* Make sure the canvas doesn't exceed the screen width */
+  }
+}
 html {
   font-size: 16px;
   overflow-x: hidden;
