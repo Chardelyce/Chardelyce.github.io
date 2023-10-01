@@ -55,29 +55,39 @@ function fetchGitHubActivity() {
   
   // Call the function to fetch and display GitHub activity
   fetchGitHubActivity();
-  const canvas = document.getElementById('canvas');
-  const ctx = canvas.getContext('2d');
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-  const isDarkModeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const rainbowColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
+ // Detect whether dark mode is enabled
+const isDarkModeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-  
-  const particles = [];
-  const maxParticles = 100;
-  const minDistance = 150;
-  function getRandomColor() {
-    return rainbowColors[Math.floor(Math.random() * rainbowColors.length)];
+// Create an array of rainbow colors
+const rainbowColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
+
+// Function to generate a random color from the rainbow colors
+function getRandomColor() {
+  return rainbowColors[Math.floor(Math.random() * rainbowColors.length)];
+}
+
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+const particles = [];
+const maxParticles = 100;
+const minDistance = 150;
+
+class Particle {
+  constructor(x, y) {
+    this.x = x;
+    this.y = y;
+    this.color = isDarkModeEnabled ? '#FFFFFF' : getRandomColor();
+    this.radius = 2;
+    this.velocityX = Math.random() * 4 - 2;
+    this.velocityY = Math.random() * 4 - 2;
   }
-  class Particle {
-    constructor(x, y) {
-      this.x = x;
-      this.y = y;
-      this.color = isDarkModeEnabled ? '#FFFFFF' : getRandomColor();
-      this.radius = 2;
-      this.velocityX = Math.random() * 4 - 2;
-      this.velocityY = Math.random() * 4 - 2;
-    }
+
+  // ... rest of the code remains the same
+}
+
   
   draw() {
       ctx.beginPath();
