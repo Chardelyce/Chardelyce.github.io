@@ -64,18 +64,15 @@ const particles = [];
 const maxParticles = 100;
 const minDistance = 150;
 
-const isDarkModeEnabled = window.matchMedia('(prefers-color-scheme: dark)').matches;
-
-
 class Particle {
-  constructor(x, y) {
+constructor(x, y, color) {
     this.x = x;
     this.y = y;
-    this.color = isDarkModeEnabled ? '#FFFFFF' : rainbowColors[Math.floor(Math.random() * rainbowColors.length)];
+    this.color = color;
     this.radius = 2;
     this.velocityX = Math.random() * 4 - 2;
     this.velocityY = Math.random() * 4 - 2;
-  }
+}
 
 draw() {
     ctx.beginPath();
@@ -106,7 +103,6 @@ update() {
 for (let i = 0; i < maxParticles; i++) {
 const x = Math.random() * canvas.width;
 const y = Math.random() * canvas.height;
-const rainbowColors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
 const colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#9400D3'];
 const color = colors[Math.floor(Math.random() * colors.length)];
 const particle = new Particle(x, y, color);
