@@ -72,14 +72,17 @@ class Particle {
       this.radius = 2;
       this.velocityX = Math.random() * 4 - 2;
       this.velocityY = Math.random() * 4 - 2;
+      this.opacity = 0.7;
   }
 
   draw() {
-      ctx.beginPath();
-      ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
-      ctx.fillStyle = this.color;
-      ctx.fill();
-      ctx.closePath();
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+    ctx.fillStyle = this.color;
+    ctx.globalAlpha = this.opacity; // Set the opacity
+    ctx.fill();
+    ctx.globalAlpha = 1; // Reset the opacity
+    ctx.closePath();
   }
 
   update() {
