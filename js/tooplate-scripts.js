@@ -2,12 +2,11 @@
 
 // Function to fetch GitHub activity and populate the feed
 function fetchGitHubActivity() {
-  // Replace with your GitHub username and repo name
+  // Replace with your GitHub username
   const username = "chardelyce";
-  const repo = "chardelyce";
 
   // GitHub API URL for the user's activity feed
-  const apiUrl = `https://api.github.com/repos/${username}/${repo}/events`;
+  const apiUrl = `https://api.github.com/users/${username}/events`;
 
   // Map event types to their corresponding actions
   const eventActionMap = {
@@ -55,6 +54,7 @@ function fetchGitHubActivity() {
 
 // Call the function to fetch and display GitHub activity
 fetchGitHubActivity();
+
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 canvas.width = window.innerWidth;
