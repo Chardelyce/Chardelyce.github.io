@@ -7,7 +7,20 @@ https://www.tooplate.com/view/2117-infinite-loop
 */
 
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
-
+.tm-notification-item {
+  background-color: black;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px; /* Spacing between notification items */
+  display: flex;
+  align-items: center; /* Center vertically */
+  }
+  /* Style for the text content inside each notification item */
+  .tm-notification-item p {
+  color: white;
+  margin: 0;
+  }
 body {
 	font-family: "Raleway", sans-serif;
 	font-size: 1.2em;
@@ -16,10 +29,22 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-a {
-  transition: all 0.3s ease;
-  color: #38B;
+/* .recommendation */
+
+.recommendations {
+  display: flex;
+  font-size: 24px;
+  justify-content: space-between;
+  margin: 20px;
 }
+
+
+
+.recommendation {
+  font-family: cursive;
+  margin: 0 10px;
+}
+
 
 a:hover,
 a:focus {
