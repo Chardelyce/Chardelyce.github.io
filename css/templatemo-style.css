@@ -20,13 +20,13 @@ body {
 }
 
 a {
-	color: #9F6;
+	color: #C1BDCE;
     text-decoration: none;
     transition: all 0.3s ease;
 }
 
 a:hover {
-	color: #3CF;
+	color: rgb(255, 255, 255);
 }
 
 p {
@@ -38,7 +38,7 @@ h2 {
 }
 
 .highlight {
-    color: #99FF66;
+    color: #C1BDCE;
 }
 
 .page-container {
@@ -60,15 +60,15 @@ h2 {
 }
 
 .btn-primary {
-    background-color: white;
+    background-color: #645C86;
     border: none;
     color: #333;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-    color: #5cac38;
-    background-color: white;
+    color: #645C86;
+    background-color: #CBC7DC;
 }
 
 
@@ -129,13 +129,13 @@ h2 {
 
 .navbar .navbar-nav .nav-item.selected .nav-link,
 .navbar .navbar-nav .nav-item .nav-link:hover {
-    color: #99FF66;
-    border-bottom: 1px solid #99FF66;
+    color: #484160;
+    border-bottom: 1px solid #484160;
 }
 
 .cd-slider-nav li.selected a+.circle,
 .navbar .navbar-nav .nav-item .nav-link:hover+.circle {
-    background-color: #99FF66;
+    background-color: #484160;
 }
 
 .navbar-toggler-icon {
@@ -254,7 +254,7 @@ h2 {
     margin-left: 10px;
     margin-right: 10px;
 	height: auto;
-	background: #3085a3;
+	background: #484160;
 	text-align: center;
 	cursor: pointer;
 }
@@ -320,7 +320,7 @@ h2 {
 }
 
 .gallery-section {
-  background-color: #99ccff;
+  background-color: #484160;
 }
 
 .gallery-section .title {
@@ -412,7 +412,7 @@ figure.effect-julia:hover p {
 
 .gallery-slider .slick-dots li.slick-active, 
 .gallery-slider .slick-dots li:hover {
-    background-color: #3CCDFF;
+    background-color: #484160;;
 }
 
 .gallery-slider .slick-dots li {
