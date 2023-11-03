@@ -12,9 +12,10 @@ html, body, .page-container {
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 19px;
+    font-size: 18px;
     font-weight: 300;
     color: white;
+    background-color: #706897;
     line-height: 1.5;
 }
 
