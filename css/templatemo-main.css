@@ -26,42 +26,6 @@ a { color: #3CC; }
 a:hover { color: #FF0; }
 
 
-/*
-------------------------
-Stars
-------------------------
-*/
-
-.twinkling-stars {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  z-index: -1;
-  animation: twinkling 10s linear infinite;
-}
-
-.twinkling-stars::before {
-  content: " ";
-  position: absolute;
-  width: 2px;
-  height: 2px;
-  background: white;
-  border-radius: 50%;
-  opacity: 0;
-}
-
-@keyframes twinkling {
-  0% {
-      opacity: 0;
-  }
-  50% {
-      opacity: 1;
-  }
-  100% {
-      opacity: 0;
-  }
-}
 
 
 
