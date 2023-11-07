@@ -57,6 +57,12 @@ a:hover { color: #FF0; }
   padding: 2px 12px;
   border-radius: 15px;
 }
+
+
+.first-content {
+  text-align: center;
+  margin-top: 10px;
+}
 .fixed-side-navbar .nav > li a.active {
   background-color: transparent;
   color: black;
