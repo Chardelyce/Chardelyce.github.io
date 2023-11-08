@@ -26,7 +26,7 @@ body {
 
 .primary-button a {
 	display: inline-block;
-	background-color: #a2cf8d;
+	background-color: #8d99cf;
 	padding: 12px 18px;
 	color: #fff;
 	font-size: 11px;
@@ -38,7 +38,7 @@ body {
 	transition: all 0.5s;
 }
 .primary-button a:hover {
-	background-color: #5c9d7d;
+	background-color: #5c689d;
 }
 
 .white-button a {
@@ -144,11 +144,11 @@ body {
 }
 .navbar-inverse .navbar-toggle {
 	margin-top: 22px;
-    border-color: #a2cf8d;
-    background-color: #a2cf8d;
+    border-color: #8d99cf;
+    background-color: #8d99cf;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background-color: #a2cf8d;
+	background-color: #8d99cf;
 }
 bootstrap.min.css:5
 .navbar-toggle {
@@ -234,7 +234,7 @@ ul.cd-hero-slider {
 }
 
 .service-item:hover {
-	background-color: #a2cf8d;
+	background-color: #8d99cf;
 }
 
 .service-item h4 {
@@ -364,7 +364,7 @@ ul.cd-hero-slider {
 }
 
 .filter-categories ul li.active span {
-  color: #a2cf8d;
+  color: #8d99cf;
 }
 
 .project-item {
@@ -384,7 +384,7 @@ ul.cd-hero-slider {
 
 .project-item .hover-effect {
 	position: absolute;
-	background-color: rgba(162, 207, 141, 0.95);
+	background-color: #8d99cff2;
 	width: 100%;
 	top: 0;
 	bottom: 0;
@@ -401,13 +401,13 @@ ul.cd-hero-slider {
 	height: 46px;
 	background-color: #fff;
 	line-height: 46px;
-	color: #a2cf8d;
+	color: #8d99cf;
 	border-radius: 50%;
 	font-size: 18px;
 }
 
 .project-item .hover-effect i:hover {
-	background-color: #5c9d7d;
+	background-color: #5c689d;
 	color: #fff;
 	transition: all 0.5s;
 }
@@ -505,11 +505,11 @@ ul.cd-hero-slider {
 	line-height: 44px;
 	color: #fff;
 	text-align: center;
-	background-color: #a2cf8d;
+	background-color: #8d99cf;
 }
 
 .pop span:hover, .pop2 span:hover, .pop3 span:hover {
-	background-color: #5c9d7d;
+	background-color: #5c689d;
 	transition: all 0.5s;
 }
 
@@ -531,7 +531,7 @@ ul.cd-hero-slider {
 .fact-item .counter {
 	font-size: 24px;
 	font-weight: 700;
-	color: #a2cf8d;
+	color: #8d99cf;
 }
 
 .fact-item span {
@@ -603,7 +603,7 @@ ul.cd-hero-slider {
 
 #contact button {
 	display: inline-block;
-	background-color: #a2cf8d;
+	background-color: #8d99cf;
 	padding: 12px 18px;
 	color: #fff;
 	font-size: 11px;
@@ -616,7 +616,7 @@ ul.cd-hero-slider {
 
 #contact button:hover {
 	color: #fff;
-	background-color: #5c9d7d;
+	background-color: #5c689d;
 	transition: all 0.3s;
 }
 
@@ -638,7 +638,7 @@ footer p {
 footer em {
 	font-style: normal;
 	font-weight: 700;
-	color: #a2cf8d;
+	color: #8d99cf;
 }
 
 footer ul {
@@ -658,14 +658,14 @@ footer ul li a {
 	line-height: 36px;
 	text-align: center;
 	display: inline-block;
-	background-color: #a2cf8d;
+	background-color: #8d99cf;
 	color: #202628;
 	border-radius: 50%;
 }
 
 footer ul li a:hover {
 	color: #202628;
-	background-color: #5c9d7d;
+	background-color: #5c689d;
 	transition: all 0.5s;
 }
 
