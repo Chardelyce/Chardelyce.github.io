@@ -27,7 +27,36 @@ window.addEventListener('scroll', () => {
 
 /* end image control  */
 
+/* stars  */
 
+  // Function to create a star and add it to the body
+  function createStar() {
+    const star = document.createElement('div');
+    star.classList.add('star');
+
+    // Randomly position the star on the page
+    const x = Math.random() * window.innerWidth;
+    const y = Math.random() * window.innerHeight;
+
+    star.style.left = x + 'px';
+    star.style.top = y + 'px';
+
+    document.body.appendChild(star);
+  }
+
+  // Function to create a specified number of stars
+  function createStars(count) {
+    for (let i = 0; i < count; i++) {
+      createStar();
+    }
+  }
+
+  // Create 100 stars (you can adjust the number)
+  createStars(100);
+
+
+
+/* end stars  */
 
 jQuery(document).ready(function($) {
 

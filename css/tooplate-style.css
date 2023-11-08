@@ -23,7 +23,24 @@ p {
 /* Images and design  */
 body {
     background: linear-gradient(to bottom, #000000, #142d72);
+	
 }
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%; /* Make the star a circle */
+    animation: twinkle 1s infinite alternate; /* Animate the twinkle effect */
+  }
+  @keyframes twinkle {
+    0% {
+      opacity: 1; /* Fully visible */
+    }
+    100% {
+      opacity: 0; /* Completely transparent */
+    }
+  }
 
 .moon-image {
 	display: none;
