@@ -118,14 +118,7 @@ p {
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
-.navbar-brand .logo{
-	margin-top: 22px;
-	background-image: url(../img/white_logo.png);
-	display: inline-block;
-	width: 125px;
-	height: 32px;
-	background-repeat: no-repeat;
-}
+
 .header.active .navbar-brand .logo{
 	margin-top: 22px;
 	background-image: url(../img/black_logo.png);
