@@ -97,10 +97,8 @@ http://www.tooplate.com/view/2089-meteor
                 <div class="col-md-12">
                     <div class="section-heading">
                         <h4>About Me</h4>
-
-                        <p>    As an A and B student who graduated a year early from high school, became a Bachelor’s of Science in Computer Science graduate of Full Sail University, then received the highest honor award for the entire degree program; Charde’Lyce prides herself on researching subjects she may not know and spends time brushing up on the ones she is already familiar with. From the first job to the most recent, Charde’Lyce has made a good impression on both the work she performs as well as with her relations with fellow coworkers. <a href="https://github.com/Chardelyce/picture/files/12137066/resume.docx"><span style="color: rgb(121, 175, 255);"> Copy of my resume</span>
+                        <p>    As an A and B student who graduated a year early from high school, became a Bachelor’s of Science in Computer Science graduate of Full Sail University, then received the highest honor award for the entire degree program; Charde’Lyce prides herself on researching subjects she may not know and spends time brushing up on the ones she is already familiar with. From the first job to the most recent, Charde’Lyce has made a good impression on both the work she performs as well as with her relations with fellow coworkers. 
                         </p>
-
                         <div class="line-dec"></div>
                     </div>
                 </div>
@@ -264,7 +262,7 @@ http://www.tooplate.com/view/2089-meteor
                         <div class="line-dec"></div>
                        
                     </div>
-                   
+                
                    
 
                 </div>
@@ -327,8 +325,7 @@ http://www.tooplate.com/view/2089-meteor
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/script.js"></script>
-    <script src="js/plugins.js"></script>
+   <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
  <script type="text/javascript">
     $(document).ready(function() {
@@ -366,5 +363,78 @@ http://www.tooplate.com/view/2089-meteor
         };
     }
     </script>
+
+    <script>// Function to fetch GitHub activity and populate the feed
+        function fetchGitHubActivity() {
+            // Replace with your GitHub username and repo name
+            const username = "chardelyce";
+            const repo = "chardelyce";
+            
+            // GitHub API URL for the user's activity feed
+            const apiUrl = `https://api.github.com/repos/${username}/${repo}/events`;
+            
+            // Map event types to their corresponding actions
+            const eventActionMap = {
+                PushEvent: "pushed to",
+                PullRequestEvent: "opened a pull request in",
+                // Add more event types and actions as needed
+            };
+            
+            // Fetch the GitHub activity data
+            fetch(apiUrl)
+                .then((response) => response.json())
+                .then((data) => {
+                    const githubFeed = document.getElementById("github-feed");
+            
+                    // Clear any existing content
+                    githubFeed.innerHTML = "";
+            
+                    // Loop through the GitHub activity events
+                    data.forEach((event) => {
+                        // Determine the action based on the event type
+                        const action = eventActionMap[event.type] || "performed an action in";
+            
+                        // Extract the repository name
+                        const repoName = event.repo.name || "an unknown repository";
+            
+                        // Create a new notification item for each event
+                        const notificationItem = document.createElement("div");
+                        notificationItem.classList.add("media", "tm-notification-item");
+            
+                        // Display the event content in white text
+                        notificationItem.innerHTML = `
+                            <p style="color: white;">
+                                ${event.actor.login} ${action} <strong>${repoName}</strong>
+                            </p>
+                        `;
+            
+                        // Append the notification item to the feed
+                        githubFeed.appendChild(notificationItem);
+                    });
+                })
+                .catch((error) => {
+                    console.error("Error fetching GitHub activity:", error);
+                });
+            }
+            </script>
+
+
+<!--css github-->
+<style>.tm-notification-item {
+    background-color: black;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px; /* Spacing between notification items */
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+/* Style for the text content inside each notification item */
+.tm-notification-item p {
+    color: rgb(0, 0, 0);
+    margin: 0;
+}</style>
+
 </body>
 </html>
