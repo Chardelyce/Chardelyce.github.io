@@ -21,7 +21,7 @@ p {
 	line-height: 24px;
 }
 body {
-    background: linear-gradient(to bottom, #142d72, #000000);
+    background: linear-gradient(to bottom, #000000, #142d72);
 }
 
 .primary-button a {
