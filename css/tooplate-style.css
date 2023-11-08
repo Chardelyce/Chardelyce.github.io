@@ -36,6 +36,22 @@ p {
 .primary-button a:hover {
 	background-color: #5c9d7d;
 }
+
+.tm-notification-item {
+	background-color: black;
+	border: 2px solid white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 10px; /* Spacing between notification items */
+	display: flex;
+	align-items: center; /* Center vertically */
+}
+
+/* Style for the text content inside each notification item */
+.tm-notification-item p {
+	color: white;
+	margin: 0;
+}
 .white-button a {
 	display: inline-block;
 	background-color: #fff;
