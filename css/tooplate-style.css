@@ -267,7 +267,13 @@ ul.cd-hero-slider {
 .service-item:hover {
 	background-color: #8d99cf;
 }
-
+.service-item img {
+    border: 3px solid #90d5f0; /* Add a 3px border with the color #90d5f0 */
+    border-radius: 50%; /* Make the image a circle */
+    width: 100px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+    padding: 5px;
+}
 .service-item h4 {
 	font-size: 16px;
 	font-weight: 700;
