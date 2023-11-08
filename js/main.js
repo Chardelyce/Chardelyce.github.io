@@ -52,7 +52,7 @@ window.addEventListener('scroll', () => {
   }
 
   // Create 100 stars (you can adjust the number)
-  createStars(100);
+  createStars(200);
 
 
 

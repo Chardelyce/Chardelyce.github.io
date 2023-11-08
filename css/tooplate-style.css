@@ -144,13 +144,13 @@ body {
 	text-shadow: none;
 	color: #90d5f0!important;
 }
-
 .header.active {
-    background-color: rgba(250, 250, 250, 0.98);
+    background-color: #90d5f0;
     -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
 }
+
 
 #main-nav {
 	background-color: transparent;
@@ -563,6 +563,7 @@ ul.cd-hero-slider {
 
 footer {
 	background-color: #202628;
+	background-image: url(../img/planet-earth-svgrepo-com.png);
 	padding: 20px;
 }
 
