@@ -559,14 +559,17 @@ ul.cd-hero-slider {
 
 
 
-/* FOOTER */
+
+
 
 footer {
     background-color: #202628;
     background-image: url(../img/planet-earth-svgrepo-com.png);
-    background-repeat: no-repeat; /* Add this line */
+    background-repeat: no-repeat;
+    background-size: cover; /* or background-size: 100% 100%; */
     padding: 20px;
 }
+
 
 
 footer p {
