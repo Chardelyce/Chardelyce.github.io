@@ -6,6 +6,29 @@ http://www.tooplate.com/view/2089-meteor
 
 */
 
+/* image control  */
+
+const moonImage = document.querySelector('.moon-image');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+  const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollTop > lastScrollTop) {
+    // Scrolling down
+    moonImage.style.display = 'none';
+  } else {
+    // Scrolling up
+    moonImage.style.display = 'block';
+  }
+
+  lastScrollTop = scrollTop;
+});
+
+/* end image control  */
+
+
+
 jQuery(document).ready(function($) {
 
 	'use strict';

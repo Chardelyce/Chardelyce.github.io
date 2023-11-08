@@ -20,10 +20,21 @@ p {
 	letter-spacing: 0.25px;
 	line-height: 24px;
 }
+/* Images and design  */
 body {
     background: linear-gradient(to bottom, #000000, #142d72);
 }
 
+.moon-image {
+	display: none;
+    width: 30px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    position: absolute;
+    top: 5px; /* Adjust top position as needed */
+    left: 5px; /* Adjust left position as needed */
+}
+
+/* end images and design  */
 .primary-button a {
 	display: inline-block;
 	background-color: #8d99cf;
