@@ -20,6 +20,10 @@ p {
 	letter-spacing: 0.25px;
 	line-height: 24px;
 }
+body {
+    background: linear-gradient(to bottom, #142d72, #000000);
+}
+
 .primary-button a {
 	display: inline-block;
 	background-color: #a2cf8d;
