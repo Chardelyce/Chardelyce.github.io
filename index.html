@@ -83,7 +83,120 @@ http://www.tooplate.com/view/2089-meteor
                 </div> 
             </li>
         </ul> <!-- .cd-hero-slider -->
+        <style>
+            body {
+              margin: 0;
+              overflow: hidden;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              height: 100vh;
+            
+            }
         
+            svg {
+              max-width: 100%;
+              max-height: 100%;
+              display: block;
+              margin: auto;
+            }
+        
+            .comet {
+              position: absolute;
+              width: 10px;
+              height: 2px;
+              background-color: white;
+              animation: shoot 3s linear infinite;
+            }
+            .comet::before {
+              content: '';
+              position: absolute;
+              width: 10px;
+              height: 2px;
+              background-color: rgba(255, 255, 255, 0.3);
+              animation: fade 3s linear infinite;
+            }
+        
+            @keyframes shoot {
+              0% {
+                left: -10px;
+                transform: rotate(30deg);
+              }
+              100% {
+                left: 100%;
+                transform: rotate(30deg);
+              }
+            }
+            @keyframes fade {
+              0% {
+                width: 10px;
+                background-color: rgba(255, 255, 255, 0.3);
+              }
+              100% {
+                width: 0;
+                background-color: transparent;
+              }
+            }
+          </style>
+        </head>
+        <body>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+            <circle cx="400" cy="300" r="10" fill="yellow" id="sun" />
+        
+            <ellipse cx="400" cy="300" rx="58" ry="55" fill="none" stroke="gray" stroke-width="1" id="orbit-mercury" />
+            <circle cx="400" cy="124" r="1.7" fill="gray" id="mercury" />
+        
+            <ellipse cx="400" cy="300" rx="108" ry="100" fill="none" stroke="gray" stroke-width="1" id="orbit-venus" />
+            <circle cx="400" cy="100" r="3.3" fill="orange" id="venus" />
+        
+            <ellipse cx="400" cy="300" rx="150" ry="140" fill="none" stroke="gray" stroke-width="1" id="orbit-earth" />
+            <circle cx="400" cy="80" r="4" fill="dodgerblue" id="earth" />
+        
+            <ellipse cx="400" cy="300" rx="202" ry="190" fill="none" stroke="gray" stroke-width="1" id="orbit-mars" />
+            <circle cx="400" cy="43.3" r="2.7" fill="red" id="mars" />
+        
+            <ellipse cx="400" cy="300" rx="330" ry="310" fill="none" stroke="gray" stroke-width="1" id="orbit-jupiter" />
+            <circle cx="400" cy="100" r="6" fill="sandybrown" id="jupiter" />
+        
+            <ellipse cx="400" cy="300" rx="490" ry="460" fill="none" stroke="gray" stroke-width="1" id="orbit-saturn" />
+            <circle cx="400" cy="50" r="5" fill="khaki" id="saturn" />
+        
+            <ellipse cx="400" cy="300" rx="660" ry="620" fill="none" stroke="gray" stroke-width="1" id="orbit-uranus" />
+            <circle cx="400" cy="46.7" r="4" fill="deepskyblue" id="uranus" />
+        
+            <ellipse cx="400" cy="300" rx="800" ry="750" fill="none" stroke="gray" stroke-width="1" id="orbit-neptune" />
+            <circle cx="400" cy="60" r="4" fill="blue" id="neptune" />
+          </svg>
+          <div class="comet" style="top: 10%; left: -10%;"></div>
+          <div class="comet" style="top: 20%; left: -10%;"></div>
+          <div class="comet" style="top: 30%; left: -10%;"></div>
+          <div class="comet" style="top: 40%; left: -10%;"></div>
+          <div class="comet" style="top: 50%; left: -10%;"></div>
+          <script>
+            const planets = ['mercury', 'venus', 'earth', 'mars', 'jupiter', 'saturn', 'uranus', 'neptune'];
+        
+            function rotatePlanets() {
+              const currentTime = new Date();
+              const sun = document.getElementById('sun');
+        
+              planets.forEach(planet => {
+                const circle = document.getElementById(planet);
+                const orbit = document.getElementById(`orbit-${planet}`);
+        
+                const angle = ((currentTime - new Date(0)) / 10000) * (360 / (planet.length * 100));
+                const x = sun.cx.baseVal.value + orbit.rx.baseVal.value * Math.cos(angle);
+                const y = sun.cy.baseVal.value + orbit.ry.baseVal.value * Math.sin(angle);
+        
+                circle.cx.baseVal.value = x;
+                circle.cy.baseVal.value = y;
+              });
+        
+              requestAnimationFrame(rotatePlanets);
+            }
+        
+            rotatePlanets();
+          </script>
+        </body>
 
         <div class="cd-slider-nav">
             <nav>
