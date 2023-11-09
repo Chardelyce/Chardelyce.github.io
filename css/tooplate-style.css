@@ -52,14 +52,16 @@ body {
 }
 
 .profile-image {
-    float: center; /* Align the image to the left */
+    display: inline-block; /* Display as inline-block to align with profile-info */
+    vertical-align: middle; /* Align vertically with the middle of the line height */
     margin-right: 10px; /* Add some margin for spacing */
-	border: 3px solid #90d5f0; /* Add a 3px border with the color #90d5f0 */
+    border: 3px solid #90d5f0; /* Add a 3px border with the color #90d5f0 */
     border-radius: 50%;
 }
 
 .profile-info {
-    overflow: hidden; /* Clear the float to prevent layout issues */
+    display: inline-block; /* Display as inline-block to align with profile-image */
+    vertical-align: middle; /* Align vertically with the middle of the line height */
 }
 
 /* end images and design  */
