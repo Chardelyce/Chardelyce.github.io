@@ -50,7 +50,23 @@ body {
     top: 5px; /* Adjust top position as needed */
     left: 5px; /* Adjust left position as needed */
 }
+.tm-slide-content-div {
+    display: flex;
+    align-items: center;
+}
 
+.profile-image-div {
+    margin-right: 20px; /* Adjust the margin as needed */
+}
+
+.profile-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-me-content {
+    flex: 1;
+}
 .profile-image {
     float: left; /* Align the image to the left */
     float: center; /* Align the image to the left */
