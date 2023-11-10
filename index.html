@@ -87,7 +87,11 @@ http://www.tooplate.com/view/2089-meteor
 
        
     </section> <!-- .cd-hero -->
-                    
+    <div id="astronaut-container" onclick="downloadResume()">
+        <img class="astronaut" src="https://www.svgrepo.com/show/52263/astronaut.svg" alt="Astronaut">
+    </div>
+    <div id="download-text">Download Resume</div>
+ 
     <div id="about" class="page-section">
         <div class="container">
             <div class="row">
@@ -170,11 +174,10 @@ http://www.tooplate.com/view/2089-meteor
                            
                            
 
-                            <div class="col-md-3 col-sm-6 project-item mix python">
+                            <div class="col-md-3 col-sm-6 project-item mix Misc Programming">
                                 <div class="thumb">
                                    
-                                    <iframe src="https://trinket.io/embed/pygame/9dedddb511" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-
+                                        <iframe width="100%" height="475" src="https://dotnetfiddle.net/Widget/uw9j15" frameborder="0"></iframe>
                                 </div>
   
                             </div>
@@ -325,7 +328,24 @@ http://www.tooplate.com/view/2089-meteor
         </div>
     </footer>
     
+    <script>
+        function downloadResume() {
+            // Provide the link to your resume file
+            const resumeUrl = 'https://github.com/Chardelyce/picture/files/12137066/resume.docx';
 
+            // Create a hidden anchor element
+            const anchor = document.createElement('a');
+            anchor.href = resumeUrl;
+            anchor.download = 'resume.docx';
+
+            // Append the anchor to the document and trigger a click
+            document.body.appendChild(anchor);
+            anchor.click();
+
+            // Remove the anchor from the document
+            document.body.removeChild(anchor);
+        }
+    </script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
    <script src="js/vendor/bootstrap.min.js"></script>
    <script src="js/plugins.js"></script>
