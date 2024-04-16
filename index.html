@@ -89,7 +89,88 @@ http://www.tooplate.com/view/2089-meteor
             </li>
             
     </section> <!-- .cd-hero -->
-   
+   <style> 
+#papers {
+    position: relative;
+    background-color: lightblue;
+    padding: 20px;
+    z-index: 1;
+}
+
+.paper-stack {
+    display: flex;
+    justify-content: space-between;
+}
+
+.paper-button {
+    width: 100px;
+    height: 100px;
+    margin: 0 -20px; /* Negative margin to overlap */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.paper-button img {
+    max-width: 80%;
+    max-height: 80%;
+}
+
+.paper-button:hover {
+    transform: translateY(-10px) rotate(-3deg) scale(1.1);
+}
+
+.paper-button:nth-child(odd) {
+    transform-origin: right center;
+}
+
+.paper-button:nth-child(even) {
+    transform-origin: left center;
+}
+
+/* To ensure the first and last buttons don't overflow the container */
+.paper-button:first-child {
+    margin-left: 0;
+}
+
+.paper-button:last-child {
+    margin-right: 0;
+}
+
+
+
+
+</style>
+
+<div class="row paper-stack">
+    <div class="col-md-3">
+        <a href="paper1.html" class="paper-button">
+            <img src="paper_image1.svg" alt="Paper Image 1">
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="paper2.html" class="paper-button">
+            <img src="paper_image2.svg" alt="Paper Image 2">
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="paper3.html" class="paper-button">
+            <img src="paper_image3.svg" alt="Paper Image 3">
+        </a>
+    </div>
+    <div class="col-md-3">
+        <a href="paper4.html" class="paper-button">
+            <img src="paper_image4.svg" alt="Paper Image 4">
+        </a>
+    </div>
+</div>
+
     <div id="about" class="page-section">
         <div class="container">
             <div class="row">
