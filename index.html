@@ -327,39 +327,13 @@ http://www.tooplate.com/view/2089-meteor
                     </div>
                 </div>
                
-                <div id="pdf-viewer"></div>
+                <object data="https://ijres.org/papers/Volume-12/Issue-4/12045061.pdf" type="application/pdf" width="100%" height="600px">
+                    <p>It appears you don't have a PDF plugin for this browser.
+                       You can <a href="https://ijres.org/papers/Volume-12/Issue-4/12045061.pdf">click here to download the PDF file.</a></p>
+                </object>
       
           </div>
-          <script>
-            // URL to your PDF file
-            var pdfUrl = 'https://ijres.org/papers/Volume-12/Issue-4/12045061.pdf';
-            
-            // Initialize PDF.js
-            pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
-                // Fetch the first page
-                return pdf.getPage(1);
-            }).then(function(page) {
-                var scale = 1.5;
-                var viewport = page.getViewport({ scale: scale });
-            
-                // Prepare canvas using PDF.js
-                var canvas = document.createElement('canvas');
-                var context = canvas.getContext('2d');
-                canvas.width = viewport.width;
-                canvas.height = viewport.height;
-            
-                // Render PDF page into canvas context
-                var renderContext = {
-                    canvasContext: context,
-                    viewport: viewport
-                };
-                page.render(renderContext);
-            
-                // Append canvas to PDF container
-                var pdfContainer = document.getElementById('pdf-viewer');
-                pdfContainer.appendChild(canvas);
-            });
-            </script>
+         
 
 
     <style>.tm-notification-item {
