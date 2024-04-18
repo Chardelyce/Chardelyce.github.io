@@ -327,11 +327,41 @@ http://www.tooplate.com/view/2089-meteor
                     </div>
                 </div>
                
-          
-<body>
-                <iframe src="https://docs.google.com/viewer?url=https://ijres.org/papers/Volume-12/Issue-4/12045061.pdfwidth="100%" height="600px" frameborder="0"></iframe>
-</body>
-        </div>
+                <div id="pdf-viewer"></div>
+      
+          </div>
+          <script>
+            // URL to your PDF file
+            var pdfUrl = 'https://ijres.org/papers/Volume-12/Issue-4/12045061.pdf';
+            
+            // Initialize PDF.js
+            pdfjsLib.getDocument(pdfUrl).promise.then(function(pdf) {
+                // Fetch the first page
+                return pdf.getPage(1);
+            }).then(function(page) {
+                var scale = 1.5;
+                var viewport = page.getViewport({ scale: scale });
+            
+                // Prepare canvas using PDF.js
+                var canvas = document.createElement('canvas');
+                var context = canvas.getContext('2d');
+                canvas.width = viewport.width;
+                canvas.height = viewport.height;
+            
+                // Render PDF page into canvas context
+                var renderContext = {
+                    canvasContext: context,
+                    viewport: viewport
+                };
+                page.render(renderContext);
+            
+                // Append canvas to PDF container
+                var pdfContainer = document.getElementById('pdf-viewer');
+                pdfContainer.appendChild(canvas);
+            });
+            </script>
+
+
     <style>.tm-notification-item {
         background-color: rgb(56, 104, 177);
         border: 5px solid white;
@@ -440,6 +470,7 @@ http://www.tooplate.com/view/2089-meteor
    <script src="js/vendor/bootstrap.min.js"></script>
    <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script src="build/pdf.js"></script>
  <script type="text/javascript">
     $(document).ready(function() {
         // navigation click actions 
