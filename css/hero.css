@@ -50,58 +50,77 @@
 
 /* Name */
 
-.hero h1{
-
-    font-size:5rem;
-
-    line-height:1.1;
-
-    margin-bottom:25px;
-
+.hero h1 {
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    line-height: 1.1;
+    margin-bottom: 24px;
 }
 
-.hero h1 span{
-
-    color:#4da3ff;
-
+.hero h2 {
+    font-size: clamp(1.3rem, 3vw, 2rem);
+    font-weight: 400;
+    color: #d8d8d8;
+    margin-bottom: 24px;
 }
 
-/* Subtitle */
-
-.hero h2{
-
-    font-size:2rem;
-
-    font-weight:400;
-
-    color:#d8d8d8;
-
-    margin-bottom:25px;
-
-}
-
-/* Description */
-
-.hero p{
-
-    max-width:650px;
-
-    font-size:1.2rem;
-
-    color:#9d9d9d;
-
-    margin-bottom:45px;
-
+.hero p {
+    max-width: 700px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #9d9d9d;
+    margin-bottom: 40px;
 }
 
 /* Buttons */
 
 .hero-buttons{
-
     display:flex;
-
     gap:20px;
-
     flex-wrap:wrap;
+}
+@media (max-width: 768px){
+
+    .hero{
+
+        text-align:center;
+
+    }
+
+    .hero-content{
+
+        margin:auto;
+
+    }
+
+    .hero-buttons{
+
+        justify-content:center;
+
+    }
+
+}
+@media (max-width: 600px){
+
+    .hero{
+
+        padding-top:60px;
+
+    }
+
+    .hero-tag{
+
+        font-size:.75rem;
+
+    }
+
+    .primary-button,
+    .secondary-button{
+
+        width:100%;
+
+        text-align:center;
+
+        margin:0;
+
+    }
 
 }

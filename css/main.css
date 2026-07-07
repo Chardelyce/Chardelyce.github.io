@@ -98,15 +98,10 @@ body{
 =========================== */
 
 section{
-
     min-height:100vh;
-
-    max-width:1200px;
-
-    margin:auto;
-
-    padding:120px 40px;
-
+    width:min(1200px, 92%);
+    margin:0 auto;
+    padding:140px 0 80px;
 }
 
 /* ===========================

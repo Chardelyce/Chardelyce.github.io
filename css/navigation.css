@@ -140,17 +140,183 @@
    Mobile (We'll Improve Later)
 =========================== */
 
-@media(max-width:900px){
+@media (max-width: 900px){
 
     .navbar{
 
+        width:95%;
+
         padding:0 20px;
+
+        height:70px;
 
     }
 
     .nav-links{
 
-        gap:18px;
+        gap:16px;
+
+    }
+
+    .nav-links a{
+
+        font-size:.9rem;
+
+    }
+
+}
+/* ==========================
+   Hamburger Button
+========================== */
+
+.hamburger{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+/* ==========================
+   Mobile Navigation
+========================== */
+
+@media(max-width:768px){
+
+    .hamburger{
+
+    display:none;
+
+    width:45px;
+    height:45px;
+
+    background:none;
+
+    border:none;
+
+    cursor:pointer;
+
+    position:relative;
+
+}
+
+.hamburger span{
+
+    position:absolute;
+
+    left:8px;
+
+    width:28px;
+    height:3px;
+
+    background:white;
+
+    border-radius:10px;
+
+    transition:.35s ease;
+
+}
+
+
+.hamburger span:nth-child(1){
+
+    top:12px;
+
+}
+
+
+.hamburger span:nth-child(2){
+
+    top:21px;
+
+}
+
+
+.hamburger span:nth-child(3){
+
+    top:30px;
+
+}
+
+
+/* ===========================
+   Hamburger Animation
+=========================== */
+
+.hamburger.active span:nth-child(1){
+
+    transform:rotate(45deg);
+
+    top:21px;
+
+}
+
+
+.hamburger.active span:nth-child(2){
+
+    opacity:0;
+
+}
+
+
+.hamburger.active span:nth-child(3){
+
+    transform:rotate(-45deg);
+
+    top:21px;
+
+}
+    .nav-links{
+
+        position:fixed;
+
+        top:95px;
+
+        left:50%;
+
+        transform:translateX(-50%) scale(.95);
+
+        width:90%;
+
+        padding:40px;
+
+        flex-direction:column;
+
+        gap:25px;
+
+        text-align:center;
+
+        background:rgba(15,15,15,.92);
+
+        backdrop-filter:blur(20px);
+
+        border-radius:20px;
+
+        border:1px solid rgba(255,255,255,.08);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transition:.35s;
+
+    }
+
+    .nav-links.active{
+
+        opacity:1;
+
+        visibility:visible;
+
+        transform:translateX(-50%) scale(1);
 
     }
 
