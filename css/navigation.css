@@ -1,0 +1,157 @@
+/* ===========================
+   Navigation Bar
+=========================== */
+
+.navbar{
+
+    position:fixed;
+
+    top:25px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:92%;
+    max-width:1200px;
+
+    height:75px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 35px;
+
+    background:rgba(15,15,15,.60);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.35);
+
+    z-index:1000;
+
+}
+
+/* ===========================
+   Logo
+=========================== */
+
+.logo{
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    color:white;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:.3s;
+
+}
+
+.logo:hover{
+
+    color:#4da3ff;
+
+}
+
+/* ===========================
+   Navigation Links
+=========================== */
+
+.nav-links{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:35px;
+
+}
+
+.nav-links li{
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.nav-links a{
+
+    color:white;
+
+    font-weight:500;
+
+    font-size:1rem;
+
+    position:relative;
+
+    transition:.3s;
+
+}
+
+/* ===========================
+   Animated Underline
+=========================== */
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:white;
+
+    transition:.3s;
+
+}
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+.nav-links a:hover{
+
+    color:#ffffff;
+
+}
+
+/* ===========================
+   Mobile (We'll Improve Later)
+=========================== */
+
+@media(max-width:900px){
+
+    .navbar{
+
+        padding:0 20px;
+
+    }
+
+    .nav-links{
+
+        gap:18px;
+
+    }
+
+}

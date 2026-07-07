@@ -1,15 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+.site-container{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.site-container::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(5,5,5,.45);
+
+    pointer-events:none;
+
+    z-index:-1;
+
+}
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
 
+    <title>Charde'lyce Edwards | Engineer</title>
+
+    <!-- Main Stylesheet -->
+     <link rel="stylesheet" href="css/hero.css">
+    <link rel="stylesheet" href="css/navigation.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+
+    <!-- Animated Background -->
     <canvas id="canvas"></canvas>
 
-    <!-- Your page content will go here -->
+    <!-- ================= SITE CONTAINER ================= -->
 
+    <div class="site-container">
+
+        <!-- Navigation -->
+        <header class="navbar">
+
+            <div class="logo">
+                CE
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+
+                    <li><a href="#home">Home</a></li>
+
+                    <li><a href="#about">About</a></li>
+
+                    <li><a href="#projects">Projects</a></li>
+
+                    <li><a href="#github">GitHub</a></li>
+
+                    <li><a href="#contact">Contact</a></li>
+
+                </ul>
+            </nav>
+
+        </header>
+
+        <!-- Hero -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <h1>Charde'lyce Edwards</h1>
+
+                <h2>Engineer</h2>
+
+                <p>
+                 I develop secure software solutions with a focus on authentication,
+                 healthcare technology, Java development, and modern web applications.
+                 Explore my projects, recent GitHub activity, and current work below.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="primary-button">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="secondary-button">
+                        Contact
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- About -->
+        <section id="about">
+
+            <h2>About Me</h2>
+
+        </section>
+
+        <!-- Projects -->
+        <section id="projects">
+
+            <h2>Featured Projects</h2>
+
+            <div class="project-grid">
+
+            </div>
+
+        </section>
+
+        <!-- GitHub -->
+        <section id="github">
+
+            <h2>Recent GitHub Activity</h2>
+
+        </section>
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+        </section>
+
+        <!-- Footer -->
+        <footer>
+
+            <p>© 2026 Charde'lyce Edwards</p>
+
+        </footer>
+
+    </div>
+
+    <!-- Background Animation -->
     <script src="js/particles.js"></script>
+
 </body>
+
+</html>

@@ -1,11 +1,236 @@
-body {
-    margin: 0;
-    background-color: black;
-    overflow: hidden;
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* ===========================
+   Global Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* ===========================
+   Root Variables
+=========================== */
+
+:root{
+
+    --background:#050505;
+    --surface:rgba(20,20,20,.75);
+    --border:rgba(255,255,255,.08);
+
+    --white:#ffffff;
+    --gray:#b9b9b9;
+
+    --accent:#4da3ff;
+
+    --radius:18px;
+
+    --transition:.3s ease;
+}
+
+/* ===========================
+   HTML
+=========================== */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+/* ===========================
+   Body
+=========================== */
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+    background:var(--background);
+
+    color:var(--white);
+
+    overflow-x:hidden;
+
+    line-height:1.6;
+
+}
+
+/* ===========================
+   Animated Background
+=========================== */
+
+#canvas{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    z-index:-10;
+
+}
+
+/* ===========================
+   Main Container
+=========================== */
+
+.site-container{
+
+    position:relative;
+
+    z-index:10;
+
+    width:100%;
+
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+
+    min-height:100vh;
+
+    max-width:1200px;
+
+    margin:auto;
+
+    padding:120px 40px;
+
+}
+
+/* ===========================
+   Headings
+=========================== */
+
+h1{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:20px;
+
+}
+
+h2{
+
+    font-size:2.6rem;
+
+    margin-bottom:30px;
+
+}
+
+p{
+
+    color:var(--gray);
+
+    font-size:1.1rem;
+
+}
+
+/* ===========================
+   Links
+=========================== */
+
+a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:var(--transition);
+
+}
+
+a:hover{
+
+    color:var(--accent);
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.primary-button{
+
+    display:inline-block;
+
+    padding:14px 30px;
+
+    background:white;
+
+    color:black;
+
+    border-radius:50px;
+
+    font-weight:600;
+
+    transition:var(--transition);
+
+}
+
+.primary-button:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.secondary-button{
+
+    display:inline-block;
+
+    margin-left:20px;
+
+    padding:14px 30px;
+
+    border:1px solid white;
+
+    border-radius:50px;
+
+}
+
+.secondary-button:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+/* ===========================
+   Images
+=========================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:50px;
+
+    color:#888;
+
 }
