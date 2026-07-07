@@ -1,0 +1,131 @@
+/* ===========================
+   Contact Section
+=========================== */
+
+
+.contact-container{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    gap:40px;
+
+}
+
+
+/* Form */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    padding:35px;
+
+    background:rgba(20,20,20,.65);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+.contact-form input,
+.contact-form textarea{
+
+    width:100%;
+
+    padding:15px;
+
+    background:rgba(255,255,255,.05);
+
+    border:1px solid rgba(255,255,255,.1);
+
+    border-radius:12px;
+
+    color:white;
+
+    font-size:1rem;
+
+}
+
+
+
+.contact-form textarea{
+
+    resize:none;
+
+}
+
+
+
+.contact-form input:focus,
+.contact-form textarea:focus{
+
+    outline:none;
+
+    border-color:white;
+
+}
+
+
+
+/* Links */
+
+.contact-links{
+
+    padding:35px;
+
+    background:rgba(20,20,20,.65);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+.contact-links a{
+
+    padding:12px;
+
+    border-radius:10px;
+
+    background:rgba(255,255,255,.05);
+
+}
+
+
+
+.contact-links a:hover{
+
+    background:rgba(255,255,255,.15);
+
+}
+
+
+
+@media(max-width:800px){
+
+    .contact-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
