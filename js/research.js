@@ -16,7 +16,7 @@ function openResearch(type){
 
         case "dpet":
 
-            pdf="https://ijres.org/papers/Volume-12/Issue-4/12045061.pdf";
+            pdf= "https://sites.exeter.ac.uk/pmej/wp-content/uploads/sites/569/2024/12/Chardelyce-Edwards-Dynamic-Pedagogical-Equation-Theory-Theoretical-Perspectives-on-Mathematics-Curriculum.pdf";
 
             break;
 
