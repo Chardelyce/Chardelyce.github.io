@@ -1,0 +1,96 @@
+/* ===========================
+   Hero Entrance Animations
+=========================== */
+
+.hero-tag {
+
+    animation: fadeDown .8s ease forwards;
+
+}
+
+
+.hero h1 {
+
+    animation: fadeUp .9s ease forwards;
+
+    animation-delay:.2s;
+
+}
+
+
+.hero h2 {
+
+    animation: fadeUp .9s ease forwards;
+
+    animation-delay:.4s;
+
+}
+
+
+.hero p {
+
+    animation: fadeUp .9s ease forwards;
+
+    animation-delay:.6s;
+
+}
+
+
+.hero-buttons {
+
+    animation: fadeUp .9s ease forwards;
+
+    animation-delay:.8s;
+
+}
+
+
+
+/* ===========================
+   Keyframes
+=========================== */
+
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+@keyframes fadeDown {
+
+    from {
+
+        opacity:0;
+
+        transform:translateY(-30px);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

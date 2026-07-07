@@ -1,37 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-.site-container{
 
-    position:relative;
-
-    z-index:2;
-
-}
-
-.site-container::before{
-
-    content:"";
-
-    position:fixed;
-
-    inset:0;
-
-    background:rgba(5,5,5,.45);
-
-    pointer-events:none;
-
-    z-index:-1;
-
-}
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Charde'lyce Edwards | Engineer</title>
 
     <!-- Main Stylesheet -->
+     <link rel="stylesheet" href="css/animations.css">
      <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/research.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -114,15 +96,236 @@
         </section>
 
         <!-- Projects -->
-        <section id="projects">
+       <section id="projects" class="projects">
 
-            <h2>Featured Projects</h2>
+    <div class="section-header">
 
-            <div class="project-grid">
+        <span class="section-tag">
+            PORTFOLIO
+        </span>
+
+        <h2>
+            Featured Projects
+        </h2>
+
+        <p>
+            A collection of software projects focused on security,
+            technology and modern application development.
+        </p>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+        <!-- Bubblegum Project -->
+
+        <article class="project-card">
+
+            <div class="project-icon">
+                
+            </div>
+
+
+            <h3>
+                Bubblegum Authentication
+            </h3>
+
+
+            <p>
+                A security-focused authentication proof of concept
+                exploring password protection, encryption concepts,
+                and secure user workflows.
+            </p>
+
+
+            <div class="tech-stack">
+
+                <span>Java</span>
+
+                <span>Security</span>
+
+                <span>Authentication</span>
+
+                <span>Web</span>
 
             </div>
 
-        </section>
+
+            <a href="bubblegum/index.html" class="project-link">
+
+                View Project →
+
+            </a>
+
+
+        </article>
+
+
+
+        <!-- Portfolio Project -->
+
+
+        <article class="project-card">
+
+            <div class="project-icon">
+                
+            </div>
+
+
+            <h3>
+                Developer Portfolio
+            </h3>
+
+
+            <p>
+                A responsive portfolio website built from scratch
+                using HTML, CSS, and JavaScript.
+            </p>
+
+
+            <div class="tech-stack">
+
+                <span>HTML</span>
+
+                <span>CSS</span>
+
+                <span>JavaScript</span>
+
+            </div>
+
+
+            <a href="#" class="project-link">
+
+                View Project →
+
+            </a>
+
+
+        </article>
+
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     Research
+=========================== -->
+
+<section id="research" class="research">
+
+
+    <div class="section-header">
+
+        <span class="section-tag">
+            RESEARCH
+        </span>
+
+        <h2>
+            Research & Publications
+        </h2>
+
+        <p>
+            Exploring mathematical modeling, educational theory,
+            and theoretical concepts through independent research.
+        </p>
+
+    </div>
+
+
+
+    <div class="research-grid">
+
+
+        <!-- Research Card 1 -->
+
+        <article class="research-card">
+
+            <div class="research-icon">
+                🛰️
+            </div>
+
+
+            <h3>
+                Mathematical Modeling & Set Theory
+            </h3>
+
+
+            <p>
+                Research exploring mathematical structures,
+                modeling concepts, and theoretical frameworks.
+            </p>
+
+
+            <button onclick="openResearch('math')">
+                View Research →
+            </button>
+
+        </article>
+
+
+
+        <!-- Research Card 2 -->
+
+        <article class="research-card">
+
+            <div class="research-icon">
+                
+            </div>
+
+
+            <h3>
+                Dynamic Pedagogical Theory
+            </h3>
+
+
+            <p>
+                Exploring educational theory and approaches
+                to dynamic learning environments.
+            </p>
+
+
+            <button onclick="openResearch('dpet')">
+                View Research →
+            </button>
+
+        </article>
+
+
+
+        <!-- Research Card 3 -->
+
+        <article class="research-card">
+
+            <div class="research-icon">
+                
+            </div>
+
+
+            <h3>
+                Navigating the Fourth Dimension
+            </h3>
+
+
+            <p>
+                An exploration of relativity, perception,
+                and dimensional concepts.
+            </p>
+
+
+            <button onclick="openResearch('dimension')">
+                View Research →
+            </button>
+
+        </article>
+
+
+    </div>
+
+
+</section>
 
         <!-- GitHub -->
         <section id="github">
@@ -148,6 +351,7 @@
     </div>
 
    <script src="js/particles.js"></script>
+   <script src="js/research.js"></script>
 <script src="js/navigation.js"></script>
 
 </body>

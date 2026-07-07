@@ -1,0 +1,104 @@
+/* ===========================
+   Research Section
+=========================== */
+
+
+.research-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.research-card{
+
+    padding:35px;
+
+    background:rgba(20,20,20,.65);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    transition:.35s ease;
+
+}
+
+
+
+.research-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(255,255,255,.3);
+
+}
+
+
+
+.research-icon{
+
+    font-size:3rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.research-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.research-card button{
+
+    margin-top:20px;
+
+    padding:10px 20px;
+
+    border-radius:50px;
+
+    border:1px solid white;
+
+    background:none;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+
+.research-card button:hover{
+
+    background:white;
+
+    color:black;
+
+}
+
+
+
+@media(max-width:900px){
+
+    .research-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

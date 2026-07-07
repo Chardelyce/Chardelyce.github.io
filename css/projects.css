@@ -1,0 +1,181 @@
+/* ===========================
+   Projects Section
+=========================== */
+
+
+.projects{
+
+    padding-top:100px;
+
+}
+
+
+.section-header{
+
+    max-width:700px;
+
+    margin-bottom:60px;
+
+}
+
+
+.section-tag{
+
+    font-size:.8rem;
+
+    letter-spacing:3px;
+
+    color:#4da3ff;
+
+}
+
+
+
+.section-header h2{
+
+    margin-top:15px;
+
+}
+
+
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:30px;
+
+}
+
+
+
+/* ===========================
+   Project Cards
+=========================== */
+
+
+.project-card{
+
+    padding:35px;
+
+
+    background:rgba(20,20,20,.65);
+
+
+    backdrop-filter:blur(15px);
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+    border-radius:20px;
+
+
+    transition:.35s ease;
+
+
+}
+
+
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+
+    border-color:rgba(255,255,255,.25);
+
+
+}
+
+
+
+.project-icon{
+
+    font-size:2.5rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.project-card h3{
+
+    font-size:1.6rem;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.project-card p{
+
+    margin-bottom:25px;
+
+}
+
+
+
+/* ===========================
+   Technology Tags
+=========================== */
+
+
+.tech-stack{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:25px;
+
+}
+
+
+.tech-stack span{
+
+    padding:6px 14px;
+
+
+    border-radius:50px;
+
+
+    background:rgba(255,255,255,.08);
+
+
+    font-size:.85rem;
+
+}
+
+
+
+/* ===========================
+   Links
+=========================== */
+
+
+.project-link{
+
+    font-weight:600;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .project-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
