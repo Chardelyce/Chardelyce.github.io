@@ -1,0 +1,138 @@
+/* ===========================
+   About Section
+=========================== */
+
+
+.about-container{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:40px;
+
+}
+
+
+
+.about-card,
+.focus-card,
+.skills{
+
+    background:rgba(20,20,20,.65);
+
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:20px;
+
+    padding:35px;
+
+}
+
+
+
+.about-card h3{
+
+    font-size:1.8rem;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.about-card p{
+
+    margin-bottom:20px;
+
+}
+
+
+
+/* ===========================
+   Focus Cards
+=========================== */
+
+
+.focus-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.focus-card{
+
+    transition:.3s;
+
+}
+
+
+
+.focus-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.focus-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* ===========================
+   Skills
+=========================== */
+
+
+.skill-list{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+
+
+.skill-list span{
+
+    padding:8px 18px;
+
+    border-radius:50px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid rgba(255,255,255,.08);
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .focus-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+}
