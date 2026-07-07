@@ -1,0 +1,102 @@
+/* ===========================
+   GitHub Section
+=========================== */
+
+
+.github-graph{
+
+    margin-bottom:50px;
+
+    padding:25px;
+
+    background:rgba(20,20,20,.65);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    overflow:hidden;
+
+}
+
+
+
+.github-graph img{
+
+    width:100%;
+
+    border-radius:15px;
+
+}
+
+
+
+.github-feed{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:25px;
+
+}
+
+
+
+.github-card{
+
+    padding:25px;
+
+
+    background:rgba(20,20,20,.65);
+
+
+    border-radius:20px;
+
+
+    border:1px solid rgba(255,255,255,.08);
+
+
+    transition:.3s;
+
+}
+
+
+
+.github-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.github-card h3{
+
+    margin-bottom:15px;
+
+}
+
+
+
+.github-card span{
+
+    color:#4da3ff;
+
+    font-size:.9rem;
+
+}
+
+
+
+@media(max-width:900px){
+
+    .github-feed{
+
+        grid-template-columns:1fr;
+
+    }
+
+}
