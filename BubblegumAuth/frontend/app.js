@@ -1,73 +1,138 @@
-const API = "http://127.0.0.1:8000";
 
-document
-.getElementById("registerButton")
-.addEventListener("click", register);
+// Bubblegum Authentication Frontend Controller
 
-document
-.getElementById("loginButton")
-.addEventListener("click", login);
+const statusMessage = document.getElementById("status-message");
+const asciiGum = document.getElementById("ascii-gum");
 
-async function register(){
+const healthDisplay = document.getElementById("health");
+const generationDisplay = document.getElementById("generation");
+const mutationDisplay = document.getElementById("mutation");
+const gumTokenDisplay = document.getElementById("gum-token");
 
-    const username =
-        document.getElementById("registerUsername").value;
 
-    const password =
-        document.getElementById("registerPassword").value;
+const loginButton = document.getElementById("login-btn");
+const registerButton = document.getElementById("register-btn");
 
-    const response = await fetch(`${API}/register`,{
 
-        method:"POST",
+// Temporary Bubblegum Animation State
 
-        headers:{
-            "Content-Type":"application/json"
-        },
+function updateStatus(message) {
 
-        body:JSON.stringify({
-
-            username,
-
-            password
-
-        })
-
-    });
-
-    const data = await response.json();
-
-    alert(data.message);
+    statusMessage.innerText = message;
 
 }
 
-async function login(){
 
-    const username =
-        document.getElementById("loginUsername").value;
+function createBubbleEffect() {
 
-    const password =
-        document.getElementById("loginPassword").value;
+    asciiGum.innerText = `
 
-    const response = await fetch(`${API}/login`,{
+          .-~~~~~~~~-.
+       .-'            '-.
+     .'                  '.
+    /      BUBBLEGUM      \\
+   |        FORMING        |
+    \\                    /
+     '.                .'
+       '-.________.-'
 
-        method:"POST",
-
-        headers:{
-            "Content-Type":"application/json"
-        },
-
-        body:JSON.stringify({
-
-            username,
-
-            password
-
-        })
-
-    });
-
-    const data = await response.json();
-
-    console.log(data);
+`;
 
 }
+
+
+function popBubble() {
+
+    asciiGum.innerText = `
+
+             *
+          *     *
+       *   POP!   *
+          *     *
+             *
+
+`;
+
+}
+
+
+// Fake credential mutation display
+
+function simulateMutation() {
+
+
+    updateStatus(
+        "Stretching and folding credentials..."
+    );
+
+
+    createBubbleEffect();
+
+
+    setTimeout(() => {
+
+        updateStatus(
+            "Generating Stick of Gum..."
+        );
+
+
+        healthDisplay.innerText = "100%";
+        generationDisplay.innerText = "1";
+        mutationDisplay.innerText = "0";
+
+        gumTokenDisplay.innerText =
+            "Waiting for gum fragment";
+
+
+    }, 2000);
+
+
+
+    setTimeout(() => {
+
+        popBubble();
+
+
+        updateStatus(
+            "Stick of Gum created!"
+        );
+
+
+    }, 5000);
+
+}
+
+
+
+// Register button
+
+registerButton.addEventListener(
+    "click",
+    () => {
+
+        updateStatus(
+            "Creating your Bubblegum credential..."
+        );
+
+        simulateMutation();
+
+    }
+);
+
+
+
+// Login button
+
+loginButton.addEventListener(
+    "click",
+    () => {
+
+        updateStatus(
+            "Checking your Bubblegum state..."
+        );
+
+
+        simulateMutation();
+
+    }
+);
