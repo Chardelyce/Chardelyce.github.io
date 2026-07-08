@@ -227,28 +227,50 @@ pre {
     color: #d63384;
 
 }
+.gum-display {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 30px;
+
+}
 
 
+#ascii-gum {
 
-/* Information cards */
+    font-family: "Courier New", monospace;
 
-.credential-info {
+    white-space: pre;
 
-    background: white;
+    line-height: 0.8;
 
-    border-radius: 30px;
+    font-size: 10px;
 
-    padding: 15px;
+    color: #ff4fa3;
 
-    margin-top: 20px;
+    text-shadow:
+        0 0 5px #ffb6dd;
+
+    animation: gumFloat 3s infinite ease-in-out;
 
 }
 
 
 
-.credential-info p {
+@keyframes gumFloat {
 
-    margin: 10px;
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
 
 }
-
