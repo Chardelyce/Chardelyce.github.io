@@ -1,0 +1,254 @@
+
+/* Bubblegum Authentication Theme */
+
+* {
+    box-sizing: border-box;
+    font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+
+body {
+
+    margin: 0;
+    min-height: 100vh;
+
+    background: #f9d94d; /* candy yellow */
+
+    border: 20px solid #ff8fcf; /* bubblegum pink border */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #5a2149;
+
+}
+
+
+/* Top bubble-letter header */
+
+.bubble-header {
+
+    width: 90%;
+
+    margin-top: 30px;
+
+    padding: 25px;
+
+    background: #ffb6dd;
+
+    border: 8px solid #ff6fb5;
+
+    border-radius: 50px;
+
+    text-align: center;
+
+    box-shadow:
+        0 0 20px rgba(255, 105, 180, 0.5);
+
+}
+
+
+.bubble-header h1 {
+
+    margin: 0;
+
+    font-size: 42px;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        3px 3px white;
+
+}
+
+
+/* Main layout */
+
+.container {
+
+    width: 90%;
+
+    max-width: 900px;
+
+    margin-top: 40px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 30px;
+
+}
+
+
+
+/* Login/Register bubbles */
+
+.auth-bubble {
+
+    width: 350px;
+
+    padding: 30px;
+
+    background: #ff9fd3;
+
+    border: 8px solid #ff69b4;
+
+    border-radius: 50%;
+
+    text-align: center;
+
+    box-shadow:
+        inset -10px -10px 20px rgba(255,255,255,0.4),
+        0 10px 25px rgba(0,0,0,0.15);
+
+}
+
+
+.auth-bubble h2 {
+
+    margin-top: 0;
+
+}
+
+
+
+input {
+
+    width: 80%;
+
+    padding: 12px;
+
+    margin: 8px;
+
+    border-radius: 25px;
+
+    border: 3px solid #ff69b4;
+
+    outline: none;
+
+}
+
+
+
+button {
+
+    margin-top: 15px;
+
+    padding: 12px 30px;
+
+    border-radius: 30px;
+
+    border: none;
+
+    background: white;
+
+    color: #ff4fa3;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    transform: scale(1.05);
+
+}
+
+
+
+/* Main status bubble */
+
+.status-bubble {
+
+    width: 600px;
+
+    min-height: 500px;
+
+    padding: 40px;
+
+    background: #ffd1ea;
+
+    border: 12px solid #ff69b4;
+
+    border-radius: 50%;
+
+    text-align: center;
+
+    box-shadow:
+        inset -20px -20px 30px rgba(255,255,255,0.5),
+        0 15px 40px rgba(0,0,0,0.2);
+
+}
+
+
+
+#status-message {
+
+    font-size: 20px;
+
+    margin: 20px;
+
+    font-weight: bold;
+
+}
+
+
+
+/* ASCII gum display */
+
+.gum-display {
+
+    background: rgba(255,255,255,0.5);
+
+    border-radius: 25px;
+
+    padding: 15px;
+
+    margin: 20px;
+
+}
+
+
+
+pre {
+
+    font-size: 15px;
+
+    color: #d63384;
+
+}
+
+
+
+/* Information cards */
+
+.credential-info {
+
+    background: white;
+
+    border-radius: 30px;
+
+    padding: 15px;
+
+    margin-top: 20px;
+
+}
+
+
+
+.credential-info p {
+
+    margin: 10px;
+
+}
+
