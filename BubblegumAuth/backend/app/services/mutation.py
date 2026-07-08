@@ -1,8 +1,11 @@
 import secrets
 
-from datetime import datetime
-from app.services.gum_security import hash_gum
 from app.services.gum_renderer import GumRenderer
+
+from app.services.gum_security import (
+    create_gum_signature,
+    hash_gum_signature
+)
 
 
 class MutationEngine:
@@ -11,75 +14,91 @@ class MutationEngine:
     @staticmethod
     def mutate(user):
 
-        """
-        Evolves the Bubblegum credential state.
 
-        Each successful authentication:
-        - advances generation
-        - mutates hidden entropy
-        - creates a new Stick of Gum
-        - creates a new ASCII representation
-        """
-
-
-        # Increase mutation history
+        # Increase credential evolution
 
         user.mutation_counter += 1
 
 
 
-        # Stretch/Fold:
-        # Replace hidden internal entropy
+        # Regenerate hidden entropy
 
-        user.hidden_entropy = secrets.token_hex(32)
+        user.hidden_entropy = (
+            secrets.token_hex(32)
+        )
 
 
 
-        # Credential ages slightly
+        # Reduce gum health
 
         user.credential_health -= 3
 
 
 
-        # Generate new Stick of Gum
-
-        new_gum = (
-            GumRenderer.generate_gum_fragment()
-        )
-
-
-        user.stick_of_gum_hash = hash_gum(new_gum)
-
-
-
-        # Render the visual gum state
-
-        user.ascii_gum = (
-            GumRenderer.generate_ascii_gum(
-                user.credential_generation,
-                new_gum
-            )
-        )
-
-
-
-        # Update lifecycle
-
-        user.gum_last_mutation = datetime.utcnow()
-
-
-
-        # If gum loses elasticity,
-        # create a new credential generation
+        # If gum becomes stale,
+        # regenerate the credential generation
 
         if user.credential_health <= 0:
 
 
             user.credential_generation += 1
 
-
             user.credential_health = 100
 
 
 
-        return user
+        #
+        # Create new Stick of Gum
+        #
+
+        new_gum = (
+            GumRenderer.generate_gum_fragment()
+        )
+
+
+
+        #
+        # Bind new gum to current state
+        #
+
+        signature = create_gum_signature(
+
+            new_gum,
+
+            user.credential_generation,
+
+            user.mutation_counter,
+
+            user.hidden_entropy
+
+        )
+
+
+
+        #
+        # Store only verifier
+        #
+
+        user.stick_of_gum_hash = (
+            hash_gum_signature(signature)
+        )
+
+
+
+        #
+        # Update ASCII gum
+        #
+
+        user.ascii_gum = (
+            GumRenderer.generate_ascii_gum(
+
+                user.credential_generation,
+
+                new_gum
+
+            )
+        )
+
+
+
+        return new_gum
