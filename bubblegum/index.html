@@ -1,54 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Bubblegum Authentication</title>
-
-    <link rel="stylesheet" href="css/style.css">
-
-</head>
-
 <body>
 
-    <div class="background"></div>
+<div class="background"></div>
 
-    <div class="container">
+<div class="container">
 
-        <!-- Hero -->
+    <header class="hero">
 
-        <section class="hero">
+        <div class="logo">
 
-            <h1>🫧 Bubblegum Authentication</h1>
+            🫧
 
-            <h2>Evolutionary Credential Security</h2>
+        </div>
 
-            <p>
-                Bubblegum Authentication is an experimental security platform that
-                demonstrates an evolving authentication model. Rather than relying
-                on static credentials, the server continuously mutates credential
-                metadata after each successful authentication while maintaining a
-                familiar user experience.
-            </p>
+        <h1>Bubblegum Authentication</h1>
 
-        </section>
+        <h2>Evolutionary Credential Security</h2>
 
-        <!-- Register -->
+        <p>
+
+            Bubblegum Authentication demonstrates an experimental
+            authentication model where server-side credentials evolve
+            after every successful authentication.
+
+        </p>
+
+    </header>
+
+
+    <main class="main-grid">
+
+        <!-- Registration -->
 
         <section class="card">
 
             <h2>Initialize Credential</h2>
 
-            <p class="card-description">
+            <p>
                 Create the first generation of your credential.
             </p>
 
             <input
                 id="registerUsername"
-                type="text"
                 placeholder="Username">
 
             <input
@@ -64,19 +56,21 @@
 
         </section>
 
+
         <!-- Login -->
 
         <section class="card">
 
-            <h2>Chew Credential</h2>
+            <h2>Authenticate</h2>
 
-            <p class="card-description">
-                Authenticate and evolve your credential.
+            <p>
+
+                Log in to evolve your credential.
+
             </p>
 
             <input
                 id="loginUsername"
-                type="text"
                 placeholder="Username">
 
             <input
@@ -86,91 +80,60 @@
 
             <button id="loginButton">
 
-                🫧 Authenticate
+                🫧 Chew Credential
 
             </button>
 
         </section>
 
-        <section class="status-card">
+    </main>
 
-    <h2>System Status</h2>
+    <!-- Live Status -->
 
-    <div class="status-row">
-        <span>Credential Health</span>
-        <strong id="health">100%</strong>
-    </div>
+    <section class="status-card">
 
-    <div class="status-row">
-        <span>Bubble Generation</span>
-        <strong id="generation">1</strong>
-    </div>
+        <h2>System Status</h2>
 
-    <div class="status-row">
-        <span>Chew Count</span>
-        <strong id="chews">0</strong>
-    </div>
+        <div class="status">
 
-    <div class="status-row">
-        <span>Authentication Status</span>
-        <strong id="status">Waiting...</strong>
-    </div>
+            <div class="status-row">
 
-</section>
-        <!-- Lifecycle -->
+                <span>Credential Health</span>
 
-        <section class="lifecycle">
-
-            <h2>Credential Lifecycle</h2>
-
-            <div class="lifecycle-flow">
-
-                <div class="step">
-                    <span class="icon">🟢</span>
-                    <h3>Initialize</h3>
-                    <p>Credential Generation 1</p>
-                </div>
-
-                <div class="arrow">→</div>
-
-                <div class="step">
-                    <span class="icon">🫧</span>
-                    <h3>Chew</h3>
-                    <p>Successful Authentication</p>
-                </div>
-
-                <div class="arrow">→</div>
-
-                <div class="step">
-                    <span class="icon">⚙️</span>
-                    <h3>Mutate</h3>
-                    <p>Entropy & Hash Update</p>
-                </div>
-
-                <div class="arrow">→</div>
-
-                <div class="step">
-                    <span class="icon">🟠</span>
-                    <h3>Age</h3>
-                    <p>Elasticity Decreases</p>
-                </div>
-
-                <div class="arrow">→</div>
-
-                <div class="step">
-                    <span class="icon">🎈</span>
-                    <h3>Bubble Event</h3>
-                    <p>Credential Regeneration</p>
-                </div>
+                <span id="health">100%</span>
 
             </div>
 
-        </section>
+            <div class="status-row">
 
-    </div>
+                <span>Bubble Generation</span>
 
-    <script src="js/app.js"></script>
+                <span id="generation">1</span>
+
+            </div>
+
+            <div class="status-row">
+
+                <span>Chew Count</span>
+
+                <span id="chews">0</span>
+
+            </div>
+
+            <div class="status-row">
+
+                <span>Status</span>
+
+                <span id="status">Waiting...</span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<script src="js/app.js"></script>
 
 </body>
-
-</html>
