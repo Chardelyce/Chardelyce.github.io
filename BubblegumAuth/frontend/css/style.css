@@ -1,203 +1,907 @@
-*{
+/* ============================================
+   BubblegumAuth
+   Main Stylesheet
+============================================ */
 
-margin:0;
-padding:0;
-box-sizing:border-box;
+:root{
+
+    --bg1:#FFF8D6;
+    --bg2:#FFF2BE;
+    --pink:#ff4fa0;
+    --pinkLight:#ff92c8;
+    --pinkDark:#ff2f89;
+    --bubble:rgba(255,95,175,.38);
+    --glass:rgba(255,255,255,.28);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+
+    scroll-behavior:smooth;
 
 }
 
 body{
 
-background:#FFF9D7;
+    font-family:'Fredoka',sans-serif;
 
-font-family:'Fredoka',sans-serif;
+    color:#444;
 
-overflow:hidden;
+    overflow-x:hidden;
 
-height:100vh;
+    min-height:100vh;
+
+    position:relative;
+
+    background:
+        radial-gradient(circle at top,#fffce8 0%,transparent 40%),
+        linear-gradient(180deg,var(--bg1),var(--bg2));
 
 }
+
+/* =============================
+   Background Bubble Container
+============================= */
+
+#background-bubbles{
+
+    position:fixed;
+
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+/* =============================
+   Header
+============================= */
 
 header{
 
-text-align:center;
+    position:relative;
 
-padding-top:30px;
+    text-align:center;
 
-position:relative;
+    padding:35px 20px 20px;
 
-z-index:5;
-
-}
-
-h1{
-
-font-family:'Bubblegum Sans',cursive;
-
-font-size:5rem;
-
-color:#ff5ca8;
-
-text-shadow:
-
-3px 3px white,
-
-6px 6px rgba(255,105,180,.25);
-
-}
-
-header p{
-
-font-size:1.3rem;
-
-margin-top:10px;
-
-color:#555;
+    z-index:50;
 
 }
 
 .backButton{
 
-position:absolute;
+    position:absolute;
 
-left:40px;
+    left:35px;
 
-top:30px;
+    top:35px;
 
-text-decoration:none;
+    color:var(--pink);
 
-font-weight:bold;
+    text-decoration:none;
 
-color:#ff5ca8;
+    font-weight:600;
+
+    transition:.35s;
 
 }
+
+.backButton:hover{
+
+    transform:translateX(-6px);
+
+}
+
+h1{
+
+    font-family:'Bubblegum Sans',cursive;
+
+    font-size:clamp(3.5rem,8vw,6.5rem);
+
+    color:var(--pink);
+
+    text-shadow:
+
+        3px 3px white,
+
+        6px 6px rgba(255,90,170,.25),
+
+        0 0 35px rgba(255,90,170,.45);
+
+}
+
+header p{
+
+    margin-top:12px;
+
+    font-size:clamp(1rem,2vw,1.35rem);
+
+    color:#666;
+
+}
+
+/* =============================
+   Layout
+============================= */
 
 main{
 
-display:flex;
+    position:relative;
 
-justify-content:center;
+    display:flex;
 
-align-items:center;
+    justify-content:center;
 
-gap:70px;
+    align-items:center;
 
-margin-top:70px;
+    gap:0;
+
+    padding:30px;
+
+    min-height:70vh;
+
+    z-index:10;
 
 }
 
+/* =============================
+   Bubble Base
+============================= */
+
 .bubble{
 
-background:rgba(255,105,180,.15);
+    position:relative;
 
-border:5px solid #ff5ca8;
+    display:flex;
 
-border-radius:50%;
+    flex-direction:column;
 
-backdrop-filter:blur(12px);
+    justify-content:center;
 
-box-shadow:
+    align-items:center;
 
-inset 0 0 30px rgba(255,255,255,.45),
+    border-radius:50%;
 
-0 20px 50px rgba(255,105,180,.25);
+    overflow:hidden;
 
-display:flex;
+    padding:70px 35px 60px;
 
-flex-direction:column;
+    border:6px solid var(--pink);
 
-justify-content:center;
+    backdrop-filter:blur(18px);
 
-align-items:center;
+    -webkit-backdrop-filter:blur(18px);
+
+    background:
+
+        radial-gradient(circle at 30% 25%,
+        rgba(255,255,255,.55),
+        rgba(255,175,220,.45),
+        rgba(255,95,175,.45),
+        rgba(255,70,160,.65));
+
+    box-shadow:
+
+        inset -25px -25px 60px rgba(255,255,255,.18),
+
+        inset 20px 20px 45px rgba(255,255,255,.42),
+
+        0 0 35px rgba(255,70,170,.45),
+
+        0 25px 80px rgba(255,70,170,.35);
+
+    transition:
+
+        transform .4s,
+
+        box-shadow .4s;
+
+}
+
+.bubble:hover{
+
+    transform:scale(1.03);
+
+    box-shadow:
+
+        inset -25px -25px 60px rgba(255,255,255,.25),
+
+        inset 20px 20px 45px rgba(255,255,255,.55),
+
+        0 0 55px rgba(255,70,170,.65),
+
+        0 30px 100px rgba(255,70,170,.45);
+
+}
+
+/* =============================
+   Bubble Highlights
+============================= */
+
+.bubble::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:42%;
+
+    height:22%;
+
+    top:8%;
+
+    left:10%;
+
+    border-radius:50%;
+
+    background:
+
+        linear-gradient(
+
+        rgba(255,255,255,.82),
+
+        rgba(255,255,255,.10)
+
+        );
+
+    filter:blur(6px);
+
+    transform:rotate(-18deg);
+
+}
+
+.bubble::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:70px;
+
+    height:70px;
+
+    right:18%;
+
+    bottom:18%;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.24);
+
+    filter:blur(10px);
+
+}
+
+/* =============================
+   Bubble Sizes
+============================= */
+
+.loginBubble{
+
+    width:min(720px,72vw);
+
+    aspect-ratio:1;
+
+    z-index:5;
 
 }
 
 .registerBubble{
 
-width:260px;
+    width:min(260px,22vw);
 
-height:260px;
+    aspect-ratio:1;
 
-}
+    position:absolute;
 
-.loginBubble{
+    left:6%;
 
-width:650px;
+    top:20%;
 
-height:650px;
+    z-index:15;
 
 }
 
 .demoBubble{
 
-width:280px;
+    width:min(280px,24vw);
 
-height:280px;
+    aspect-ratio:1;
 
-}
+    position:absolute;
 
-input{
+    right:6%;
 
-width:180px;
+    bottom:10%;
 
-padding:12px;
-
-margin:8px;
-
-border:none;
-
-border-radius:20px;
+    z-index:15;
 
 }
 
-button{
+/* =============================
+   Stretchy Gum Connections
+============================= */
 
-margin-top:10px;
+.registerBubble::selection{
 
-padding:12px 25px;
+    background:none;
 
-border:none;
+}
 
-border-radius:25px;
+.registerBubble::before{
 
-background:#ff5ca8;
+    content:"";
 
-color:white;
+    position:absolute;
 
-font-size:1rem;
+    width:180px;
 
-cursor:pointer;
+    height:20px;
+
+    background:
+
+        linear-gradient(
+
+        to right,
+
+        rgba(255,120,190,.75),
+
+        rgba(255,90,170,.45)
+
+        );
+
+    right:-135px;
+
+    top:52%;
+
+    border-radius:20px;
+
+    filter:blur(2px);
+
+    transform:rotate(10deg);
+
+}
+
+.demoBubble::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:210px;
+
+    height:20px;
+
+    background:
+
+        linear-gradient(
+
+        to left,
+
+        rgba(255,120,190,.75),
+
+        rgba(255,90,170,.45)
+
+        );
+
+    left:-160px;
+
+    top:45%;
+
+    border-radius:20px;
+
+    filter:blur(2px);
+
+    transform:rotate(-12deg);
+
+}
+/* =============================
+   Bubble Titles
+============================= */
+
+.bubble h2{
+
+    position:absolute;
+
+    top:40px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    text-shadow:
+
+        2px 2px rgba(255,0,120,.35),
+
+        0 0 15px white;
+
+    font-size:clamp(1.2rem,2vw,2rem);
+
+    white-space:nowrap;
+
+    z-index:30;
+
+}
+
+/* =============================
+   Login Bubble Content
+============================= */
+
+.ascii-container{
+
+    width:90%;
+
+    height:72%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    z-index:20;
 
 }
 
 #asciiBubble{
 
-width:85%;
+    font-family:monospace;
 
-height:60%;
+    font-size:clamp(.65rem,.82vw,.95rem);
 
-background:white;
+    color:white;
 
-border-radius:25px;
+    text-align:center;
 
-padding:20px;
+    white-space:pre;
 
-overflow:auto;
+    line-height:1.1;
 
-font-family:monospace;
+    user-select:none;
 
-font-size:14px;
+    text-shadow:
 
-white-space:pre;
+        0 0 6px white,
+
+        0 0 15px rgba(255,210,230,.75),
+
+        0 0 22px rgba(255,120,200,.55);
 
 }
 
+/* =============================
+   Bubble Prompt
+============================= */
+
+.bubblePrompt{
+
+    position:absolute;
+
+    bottom:45px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    color:white;
+
+    font-size:1rem;
+
+    opacity:.85;
+
+    text-shadow:
+
+        0 0 10px white;
+
+    z-index:25;
+
+}
+
+/* =============================
+   Register Bubble
+============================= */
+
+.registerBubble input{
+
+    width:82%;
+
+    margin:8px 0;
+
+}
+
+.registerBubble button{
+
+    margin-top:12px;
+
+}
+
+/* =============================
+   Inputs
+============================= */
+
+input{
+
+    width:85%;
+
+    border:none;
+
+    border-radius:40px;
+
+    padding:14px;
+
+    outline:none;
+
+    text-align:center;
+
+    font-size:1rem;
+
+    background:rgba(255,255,255,.85);
+
+    transition:.3s;
+
+}
+
+input:focus{
+
+    background:white;
+
+    transform:scale(1.02);
+
+}
+
+button{
+
+    border:none;
+
+    border-radius:40px;
+
+    padding:14px 28px;
+
+    cursor:pointer;
+
+    background:linear-gradient(
+
+        var(--pinkLight),
+
+        var(--pink)
+
+    );
+
+    color:white;
+
+    font-weight:bold;
+
+    font-size:1rem;
+
+    transition:.3s;
+
+    box-shadow:
+
+        0 8px 20px rgba(255,70,170,.35);
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    background:linear-gradient(
+
+        var(--pink),
+
+        var(--pinkDark)
+
+    );
+
+}
+
+/* =============================
+   Demo Bubble
+============================= */
+
 .flow{
 
-text-align:center;
+    color:white;
 
-line-height:2;
+    font-size:1rem;
 
-font-size:1.2rem;
+    line-height:2;
+
+    text-align:center;
+
+    text-shadow:
+
+        0 0 10px white;
+
+    z-index:20;
+
+}
+
+/* =============================
+   Floating Motion
+============================= */
+
+.loginBubble{
+
+    animation:heroFloat 6s ease-in-out infinite;
+
+}
+
+.registerBubble{
+
+    animation:orbitLeft 8s ease-in-out infinite;
+
+}
+
+.demoBubble{
+
+    animation:orbitRight 9s ease-in-out infinite;
+
+}
+
+/* =============================
+   Animations
+============================= */
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+@keyframes orbitLeft{
+
+    0%{
+
+        transform:translateY(0px) rotate(-2deg);
+
+    }
+
+    50%{
+
+        transform:translateY(-14px) rotate(3deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0px) rotate(-2deg);
+
+    }
+
+}
+
+@keyframes orbitRight{
+
+    0%{
+
+        transform:translateY(0px) rotate(3deg);
+
+    }
+
+    50%{
+
+        transform:translateY(-10px) rotate(-2deg);
+
+    }
+
+    100%{
+
+        transform:translateY(0px) rotate(3deg);
+
+    }
+
+}
+
+/* =============================
+   Tablet
+============================= */
+
+@media(max-width:1100px){
+
+    main{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:40px;
+
+        padding-bottom:60px;
+
+    }
+
+    .registerBubble,
+    .demoBubble{
+
+        position:relative;
+
+        left:auto;
+
+        right:auto;
+
+        top:auto;
+
+        bottom:auto;
+
+    }
+
+    .registerBubble::before,
+    .demoBubble::before{
+
+        display:none;
+
+    }
+
+    .loginBubble{
+
+        width:min(90vw,650px);
+
+    }
+
+    .registerBubble{
+
+        width:min(320px,70vw);
+
+    }
+
+    .demoBubble{
+
+        width:min(320px,70vw);
+
+    }
+
+}
+
+/* =============================
+   Mobile
+============================= */
+
+@media(max-width:768px){
+
+    body{
+
+        overflow-y:auto;
+
+    }
+
+    header{
+
+        padding-top:80px;
+
+    }
+
+    .backButton{
+
+        left:18px;
+
+        top:18px;
+
+    }
+
+    main{
+
+        margin-top:10px;
+
+    }
+
+    .loginBubble{
+
+        width:95vw;
+
+    }
+
+    .registerBubble{
+
+        width:82vw;
+
+    }
+
+    .demoBubble{
+
+        width:82vw;
+
+    }
+
+    #asciiBubble{
+
+        font-size:.68rem;
+
+    }
+
+    .bubblePrompt{
+
+        font-size:.9rem;
+
+        bottom:25px;
+
+    }
+
+}
+
+/* =============================
+   Small Phones
+============================= */
+
+@media(max-width:480px){
+
+    h1{
+
+        line-height:1;
+
+        font-size:3rem;
+
+    }
+
+    header p{
+
+        font-size:.95rem;
+
+        padding:0 20px;
+
+    }
+
+    .bubble{
+
+        padding:65px 20px 45px;
+
+    }
+
+    .bubble h2{
+
+        font-size:1.15rem;
+
+    }
+
+    .flow{
+
+        font-size:.9rem;
+
+        line-height:1.7;
+
+    }
+
+    input{
+
+        width:90%;
+
+    }
+
+    button{
+
+        width:90%;
+
+    }
 
 }
