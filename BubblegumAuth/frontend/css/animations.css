@@ -1,0 +1,65 @@
+@keyframes floatUp{
+
+0%{
+
+transform:translateY(120vh);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:.4;
+
+}
+
+100%{
+
+transform:translateY(-140vh);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes bob{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-18px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+.loginBubble{
+
+animation:bob 5s ease-in-out infinite;
+
+}
+
+.registerBubble{
+
+animation:bob 6s ease-in-out infinite;
+
+}
+
+.demoBubble{
+
+animation:bob 7s ease-in-out infinite;
+
+}

@@ -1,0 +1,13 @@
+.backgroundBubble{
+
+position:absolute;
+
+border-radius:50%;
+
+background:rgba(255,105,180,.20);
+
+border:2px solid rgba(255,105,180,.5);
+
+animation:floatUp linear infinite;
+
+}
