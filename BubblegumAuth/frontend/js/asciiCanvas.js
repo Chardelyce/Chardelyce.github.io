@@ -1,8 +1,8 @@
 const canvas = document.getElementById("asciiCanvas");
 const ctx = canvas.getContext("2d");
 
-canvas.width = 500;
-canvas.height = 500;
+canvas.width = canvas.clientWidth;
+canvas.height = canvas.clientHeight;
 
 const chars =
 "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$%&*";
