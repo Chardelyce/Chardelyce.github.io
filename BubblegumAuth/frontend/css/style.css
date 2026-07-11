@@ -1,24 +1,34 @@
-/* ============================================
-   BubblegumAuth
-   Main Stylesheet
-============================================ */
+/*====================================================
+    BubblegumAuth
+    Version 2.0
+=====================================================*/
 
 :root{
 
-    --bg1:#FFF8D6;
-    --bg2:#FFF2BE;
+    --yellow:#FFF8CF;
+    --yellow2:#FFF3B8;
+
     --pink:#ff4fa0;
-    --pinkLight:#ff92c8;
-    --pinkDark:#ff2f89;
-    --bubble:rgba(255,95,175,.38);
-    --glass:rgba(255,255,255,.28);
+    --pink-dark:#ff2f87;
+    --pink-light:#ffa5d2;
+
+    --glass:rgba(255,255,255,.22);
+    --bubble:rgba(255,92,175,.40);
+
+    --shadow:rgba(255,70,170,.35);
 
 }
 
+/*====================================================
+    RESET
+=====================================================*/
+
 *{
+
     margin:0;
     padding:0;
     box-sizing:border-box;
+
 }
 
 html{
@@ -29,25 +39,33 @@ html{
 
 body{
 
-    font-family:'Fredoka',sans-serif;
-
-    color:#444;
+    min-height:100vh;
 
     overflow-x:hidden;
 
-    min-height:100vh;
-
-    position:relative;
+    font-family:"Fredoka",sans-serif;
 
     background:
-        radial-gradient(circle at top,#fffce8 0%,transparent 40%),
-        linear-gradient(180deg,var(--bg1),var(--bg2));
+
+    radial-gradient(circle at top,#ffffff80 0%,transparent 35%),
+
+    linear-gradient(
+
+        180deg,
+
+        var(--yellow),
+
+        var(--yellow2)
+
+    );
+
+    color:#555;
 
 }
 
-/* =============================
-   Background Bubble Container
-============================= */
+/*====================================================
+BACKGROUND BUBBLES
+=====================================================*/
 
 #background-bubbles{
 
@@ -63,19 +81,19 @@ body{
 
 }
 
-/* =============================
-   Header
-============================= */
+/*====================================================
+HEADER
+=====================================================*/
 
 header{
 
     position:relative;
 
+    z-index:50;
+
     text-align:center;
 
-    padding:35px 20px 20px;
-
-    z-index:50;
+    padding:35px;
 
 }
 
@@ -91,9 +109,9 @@ header{
 
     text-decoration:none;
 
-    font-weight:600;
+    font-weight:bold;
 
-    transition:.35s;
+    transition:.3s;
 
 }
 
@@ -105,35 +123,35 @@ header{
 
 h1{
 
-    font-family:'Bubblegum Sans',cursive;
+    font-family:"Bubblegum Sans",cursive;
 
-    font-size:clamp(3.5rem,8vw,6.5rem);
+    font-size:clamp(3.8rem,9vw,7rem);
 
     color:var(--pink);
 
     text-shadow:
 
-        3px 3px white,
+    4px 4px white,
 
-        6px 6px rgba(255,90,170,.25),
+    8px 8px rgba(255,120,190,.25),
 
-        0 0 35px rgba(255,90,170,.45);
+    0 0 35px rgba(255,90,170,.45);
 
 }
 
 header p{
 
-    margin-top:12px;
+    margin-top:10px;
 
-    font-size:clamp(1rem,2vw,1.35rem);
+    font-size:1.2rem;
 
     color:#666;
 
 }
 
-/* =============================
-   Layout
-============================= */
+/*====================================================
+MAIN
+=====================================================*/
 
 main{
 
@@ -145,23 +163,23 @@ main{
 
     align-items:center;
 
-    gap:0;
+    min-height:72vh;
 
-    padding:30px;
-
-    min-height:70vh;
-
-    z-index:10;
+    z-index:5;
 
 }
 
-/* =============================
-   Bubble Base
-============================= */
+/*====================================================
+GENERAL BUBBLE
+=====================================================*/
 
 .bubble{
 
     position:relative;
+
+    border-radius:50%;
+
+    overflow:hidden;
 
     display:flex;
 
@@ -171,41 +189,43 @@ main{
 
     align-items:center;
 
-    border-radius:50%;
+    backdrop-filter:blur(20px);
 
-    overflow:hidden;
-
-    padding:70px 35px 60px;
+    -webkit-backdrop-filter:blur(20px);
 
     border:6px solid var(--pink);
 
-    backdrop-filter:blur(18px);
-
-    -webkit-backdrop-filter:blur(18px);
-
     background:
 
-        radial-gradient(circle at 30% 25%,
-        rgba(255,255,255,.55),
-        rgba(255,175,220,.45),
-        rgba(255,95,175,.45),
-        rgba(255,70,160,.65));
+    radial-gradient(
+
+        circle at 28% 22%,
+
+        rgba(255,255,255,.65),
+
+        rgba(255,190,225,.45),
+
+        rgba(255,100,175,.50),
+
+        rgba(255,70,160,.65)
+
+    );
 
     box-shadow:
 
-        inset -25px -25px 60px rgba(255,255,255,.18),
+    inset -25px -25px 60px rgba(255,255,255,.18),
 
-        inset 20px 20px 45px rgba(255,255,255,.42),
+    inset 20px 20px 45px rgba(255,255,255,.42),
 
-        0 0 35px rgba(255,70,170,.45),
+    0 0 35px rgba(255,70,170,.40),
 
-        0 25px 80px rgba(255,70,170,.35);
+    0 25px 70px rgba(255,70,170,.35);
 
     transition:
 
-        transform .4s,
+    transform .35s,
 
-        box-shadow .4s;
+    box-shadow .35s;
 
 }
 
@@ -213,21 +233,7 @@ main{
 
     transform:scale(1.03);
 
-    box-shadow:
-
-        inset -25px -25px 60px rgba(255,255,255,.25),
-
-        inset 20px 20px 45px rgba(255,255,255,.55),
-
-        0 0 55px rgba(255,70,170,.65),
-
-        0 30px 100px rgba(255,70,170,.45);
-
 }
-
-/* =============================
-   Bubble Highlights
-============================= */
 
 .bubble::before{
 
@@ -237,7 +243,7 @@ main{
 
     width:42%;
 
-    height:22%;
+    height:20%;
 
     top:8%;
 
@@ -247,17 +253,17 @@ main{
 
     background:
 
-        linear-gradient(
+    linear-gradient(
 
-        rgba(255,255,255,.82),
+        rgba(255,255,255,.9),
 
-        rgba(255,255,255,.10)
+        rgba(255,255,255,.05)
 
-        );
+    );
 
     filter:blur(6px);
 
-    transform:rotate(-18deg);
+    transform:rotate(-15deg);
 
 }
 
@@ -271,21 +277,21 @@ main{
 
     height:70px;
 
-    right:18%;
-
     bottom:18%;
+
+    right:18%;
 
     border-radius:50%;
 
-    background:rgba(255,255,255,.24);
+    background:rgba(255,255,255,.28);
 
-    filter:blur(10px);
+    filter:blur(12px);
 
 }
 
-/* =============================
-   Bubble Sizes
-============================= */
+/*====================================================
+LOGIN BUBBLE
+=====================================================*/
 
 .loginBubble{
 
@@ -293,15 +299,19 @@ main{
 
     aspect-ratio:1;
 
-    z-index:5;
+    padding:80px 45px;
+
+    animation:heroFloat 6s ease-in-out infinite;
+
+    z-index:20;
 
 }
 
+/*====================================================
+REGISTER
+=====================================================*/
+
 .registerBubble{
-
-    width:min(260px,22vw);
-
-    aspect-ratio:1;
 
     position:absolute;
 
@@ -309,15 +319,21 @@ main{
 
     top:20%;
 
-    z-index:15;
+    width:min(270px,22vw);
+
+    aspect-ratio:1;
+
+    padding:45px;
+
+    animation:orbitLeft 8s ease-in-out infinite;
 
 }
 
+/*====================================================
+DEMO
+=====================================================*/
+
 .demoBubble{
-
-    width:min(280px,24vw);
-
-    aspect-ratio:1;
 
     position:absolute;
 
@@ -325,19 +341,19 @@ main{
 
     bottom:10%;
 
-    z-index:15;
+    width:min(280px,24vw);
+
+    aspect-ratio:1;
+
+    padding:45px;
+
+    animation:orbitRight 9s ease-in-out infinite;
 
 }
 
-/* =============================
-   Stretchy Gum Connections
-============================= */
-
-.registerBubble::selection{
-
-    background:none;
-
-}
+/*====================================================
+STRETCHED GUM
+=====================================================*/
 
 .registerBubble::before{
 
@@ -345,31 +361,31 @@ main{
 
     position:absolute;
 
-    width:180px;
+    width:190px;
 
-    height:20px;
+    height:18px;
+
+    top:50%;
+
+    right:-145px;
+
+    border-radius:25px;
 
     background:
 
-        linear-gradient(
+    linear-gradient(
 
-        to right,
+    to right,
 
-        rgba(255,120,190,.75),
+    rgba(255,145,205,.85),
 
-        rgba(255,90,170,.45)
+    rgba(255,90,175,.45)
 
-        );
-
-    right:-135px;
-
-    top:52%;
-
-    border-radius:20px;
+    );
 
     filter:blur(2px);
 
-    transform:rotate(10deg);
+    transform:rotate(8deg);
 
 }
 
@@ -381,34 +397,33 @@ main{
 
     width:210px;
 
-    height:20px;
-
-    background:
-
-        linear-gradient(
-
-        to left,
-
-        rgba(255,120,190,.75),
-
-        rgba(255,90,170,.45)
-
-        );
-
-    left:-160px;
+    height:18px;
 
     top:45%;
 
-    border-radius:20px;
+    left:-160px;
+
+    border-radius:25px;
+
+    background:
+
+    linear-gradient(
+
+    to left,
+
+    rgba(255,145,205,.85),
+
+    rgba(255,90,175,.45)
+
+    );
 
     filter:blur(2px);
 
     transform:rotate(-12deg);
 
-}
-/* =============================
-   Bubble Titles
-============================= */
+}/*====================================================
+    BUBBLE TITLES
+=====================================================*/
 
 .bubble h2{
 
@@ -420,31 +435,33 @@ main{
 
     transform:translateX(-50%);
 
+    white-space:nowrap;
+
     color:white;
-
-    text-shadow:
-
-        2px 2px rgba(255,0,120,.35),
-
-        0 0 15px white;
 
     font-size:clamp(1.2rem,2vw,2rem);
 
-    white-space:nowrap;
+    text-shadow:
+
+        0 0 8px white,
+
+        2px 2px rgba(255,0,120,.35);
 
     z-index:30;
 
 }
 
-/* =============================
-   Login Bubble Content
-============================= */
+/*====================================================
+ASCII CLOUD
+=====================================================*/
 
 .ascii-container{
 
-    width:90%;
+    position:relative;
 
-    height:72%;
+    width:88%;
+
+    height:68%;
 
     display:flex;
 
@@ -460,39 +477,47 @@ main{
 
 #asciiBubble{
 
+    width:100%;
+
     font-family:monospace;
 
-    font-size:clamp(.65rem,.82vw,.95rem);
+    font-size:clamp(.62rem,.85vw,.95rem);
+
+    line-height:1.08;
 
     color:white;
 
-    text-align:center;
-
     white-space:pre;
 
-    line-height:1.1;
+    text-align:center;
 
     user-select:none;
 
     text-shadow:
 
-        0 0 6px white,
+        0 0 6px rgba(255,255,255,.9),
 
-        0 0 15px rgba(255,210,230,.75),
+        0 0 14px rgba(255,190,220,.75),
 
-        0 0 22px rgba(255,120,200,.55);
+        0 0 22px rgba(255,120,190,.45);
+
+    transition:
+
+        opacity .6s,
+
+        transform .6s;
 
 }
 
-/* =============================
-   Bubble Prompt
-============================= */
+/*====================================================
+STATUS MESSAGE
+=====================================================*/
 
 .bubblePrompt{
 
     position:absolute;
 
-    bottom:45px;
+    bottom:42px;
 
     left:50%;
 
@@ -502,19 +527,17 @@ main{
 
     font-size:1rem;
 
-    opacity:.85;
+    text-align:center;
 
-    text-shadow:
-
-        0 0 10px white;
+    text-shadow:0 0 12px white;
 
     z-index:25;
 
 }
 
-/* =============================
-   Register Bubble
-============================= */
+/*====================================================
+REGISTER INPUTS
+=====================================================*/
 
 .registerBubble input{
 
@@ -524,33 +547,23 @@ main{
 
 }
 
-.registerBubble button{
-
-    margin-top:12px;
-
-}
-
-/* =============================
-   Inputs
-============================= */
-
 input{
 
     width:85%;
+
+    padding:14px;
 
     border:none;
 
     border-radius:40px;
 
-    padding:14px;
-
     outline:none;
+
+    background:rgba(255,255,255,.88);
 
     text-align:center;
 
     font-size:1rem;
-
-    background:rgba(255,255,255,.85);
 
     transition:.3s;
 
@@ -558,123 +571,172 @@ input{
 
 input:focus{
 
+    transform:scale(1.03);
+
     background:white;
 
-    transform:scale(1.02);
+    box-shadow:
+
+        0 0 18px rgba(255,120,190,.45);
 
 }
 
+/*====================================================
+BUTTONS
+=====================================================*/
+
 button{
+
+    margin-top:15px;
+
+    padding:14px 28px;
 
     border:none;
 
     border-radius:40px;
 
-    padding:14px 28px;
-
     cursor:pointer;
-
-    background:linear-gradient(
-
-        var(--pinkLight),
-
-        var(--pink)
-
-    );
-
-    color:white;
 
     font-weight:bold;
 
     font-size:1rem;
 
-    transition:.3s;
+    color:white;
+
+    background:
+
+        linear-gradient(
+
+            var(--pink-light),
+
+            var(--pink)
+
+        );
 
     box-shadow:
 
-        0 8px 20px rgba(255,70,170,.35);
+        0 10px 25px rgba(255,80,170,.35);
+
+    transition:.3s;
 
 }
 
 button:hover{
 
-    transform:translateY(-3px);
+    transform:
 
-    background:linear-gradient(
+        translateY(-3px)
 
-        var(--pink),
+        scale(1.04);
 
-        var(--pinkDark)
+    background:
 
-    );
+        linear-gradient(
+
+            var(--pink),
+
+            var(--pink-dark)
+
+        );
 
 }
 
-/* =============================
-   Demo Bubble
-============================= */
+/*====================================================
+DEMO FLOW
+=====================================================*/
 
 .flow{
 
     color:white;
 
-    font-size:1rem;
+    text-align:center;
 
     line-height:2;
 
-    text-align:center;
+    font-size:1rem;
 
     text-shadow:
 
         0 0 10px white;
 
-    z-index:20;
+}
+
+/*====================================================
+ASCII CLOUD PARTICLES
+(used later by JavaScript)
+=====================================================*/
+
+.asciiParticle{
+
+    position:absolute;
+
+    color:white;
+
+    font-family:monospace;
+
+    pointer-events:none;
+
+    opacity:.85;
+
+    animation:
+
+        asciiFloat 8s linear infinite;
 
 }
 
-/* =============================
-   Floating Motion
-============================= */
+/*====================================================
+BREATHING EFFECT
+=====================================================*/
 
 .loginBubble{
 
-    animation:heroFloat 6s ease-in-out infinite;
+    animation:
+
+        breathe 5s ease-in-out infinite;
 
 }
 
+/*====================================================
+SIDE BUBBLE MOTION
+=====================================================*/
+
 .registerBubble{
 
-    animation:orbitLeft 8s ease-in-out infinite;
+    animation:
+
+        orbitLeft 7s ease-in-out infinite;
 
 }
 
 .demoBubble{
 
-    animation:orbitRight 9s ease-in-out infinite;
+    animation:
+
+        orbitRight 8s ease-in-out infinite;
 
 }
 
-/* =============================
-   Animations
-============================= */
+/*====================================================
+KEYFRAMES
+=====================================================*/
 
-@keyframes heroFloat{
+@keyframes breathe{
 
     0%{
 
-        transform:translateY(0px);
+        transform:scale(1);
 
     }
 
     50%{
 
-        transform:translateY(-12px);
+        transform:scale(1.025);
 
     }
 
     100%{
 
-        transform:translateY(0px);
+        transform:scale(1);
 
     }
 
@@ -684,19 +746,31 @@ button:hover{
 
     0%{
 
-        transform:translateY(0px) rotate(-2deg);
+        transform:
+
+            translateY(0)
+
+            rotate(-2deg);
 
     }
 
     50%{
 
-        transform:translateY(-14px) rotate(3deg);
+        transform:
+
+            translateY(-15px)
+
+            rotate(4deg);
 
     }
 
     100%{
 
-        transform:translateY(0px) rotate(-2deg);
+        transform:
+
+            translateY(0)
+
+            rotate(-2deg);
 
     }
 
@@ -706,27 +780,69 @@ button:hover{
 
     0%{
 
-        transform:translateY(0px) rotate(3deg);
+        transform:
+
+            translateY(0)
+
+            rotate(3deg);
 
     }
 
     50%{
 
-        transform:translateY(-10px) rotate(-2deg);
+        transform:
+
+            translateY(-10px)
+
+            rotate(-3deg);
 
     }
 
     100%{
 
-        transform:translateY(0px) rotate(3deg);
+        transform:
+
+            translateY(0)
+
+            rotate(3deg);
 
     }
 
 }
 
-/* =============================
-   Tablet
-============================= */
+@keyframes asciiFloat{
+
+    0%{
+
+        transform:
+
+            translateY(15px);
+
+        opacity:0;
+
+    }
+
+    25%{
+
+        opacity:.9;
+
+    }
+
+    100%{
+
+        transform:
+
+            translateY(-20px);
+
+        opacity:0;
+
+    }
+
+}
+
+/*====================================================
+RESPONSIVE TABLET
+=====================================================*/
 
 @media(max-width:1100px){
 
@@ -738,7 +854,7 @@ button:hover{
 
         gap:40px;
 
-        padding-bottom:60px;
+        padding:30px 20px 80px;
 
     }
 
@@ -766,27 +882,22 @@ button:hover{
 
     .loginBubble{
 
-        width:min(90vw,650px);
+        width:min(92vw,650px);
 
     }
 
-    .registerBubble{
-
-        width:min(320px,70vw);
-
-    }
-
+    .registerBubble,
     .demoBubble{
 
-        width:min(320px,70vw);
+        width:min(330px,72vw);
 
     }
 
 }
 
-/* =============================
-   Mobile
-============================= */
+/*====================================================
+MOBILE
+=====================================================*/
 
 @media(max-width:768px){
 
@@ -798,15 +909,15 @@ button:hover{
 
     header{
 
-        padding-top:80px;
+        padding:80px 20px 25px;
 
     }
 
     .backButton{
 
-        left:18px;
+        top:20px;
 
-        top:18px;
+        left:20px;
 
     }
 
@@ -814,93 +925,95 @@ button:hover{
 
         margin-top:10px;
 
+        gap:28px;
+
     }
 
     .loginBubble{
 
         width:95vw;
 
-    }
-
-    .registerBubble{
-
-        width:82vw;
+        padding:70px 22px 55px;
 
     }
 
+    .registerBubble,
     .demoBubble{
 
-        width:82vw;
+        width:84vw;
+
+        padding:45px 20px;
 
     }
 
     #asciiBubble{
 
-        font-size:.68rem;
+        font-size:.62rem;
 
     }
 
     .bubblePrompt{
 
-        font-size:.9rem;
+        bottom:22px;
 
-        bottom:25px;
+        font-size:.9rem;
 
     }
 
 }
 
-/* =============================
-   Small Phones
-============================= */
+/*====================================================
+SMALL PHONES
+=====================================================*/
 
 @media(max-width:480px){
 
     h1{
 
-        line-height:1;
-
         font-size:3rem;
+
+        line-height:1;
 
     }
 
     header p{
 
+        padding:0 10px;
+
         font-size:.95rem;
-
-        padding:0 20px;
-
-    }
-
-    .bubble{
-
-        padding:65px 20px 45px;
 
     }
 
     .bubble h2{
 
-        font-size:1.15rem;
+        top:28px;
+
+        font-size:1.05rem;
 
     }
 
     .flow{
 
-        font-size:.9rem;
+        font-size:.88rem;
 
-        line-height:1.7;
-
-    }
-
-    input{
-
-        width:90%;
+        line-height:1.6;
 
     }
 
+    input,
     button{
 
-        width:90%;
+        width:92%;
+
+        font-size:.95rem;
+
+    }
+
+    #asciiBubble{
+
+        font-size:.55rem;
+
+        line-height:1;
 
     }
 
