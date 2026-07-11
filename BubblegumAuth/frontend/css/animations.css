@@ -1,30 +1,104 @@
-@keyframes floatUp{
+/*=====================================
+BubblegumAuth Animations
+======================================*/
 
-0%{
+/* Hero Bubble */
 
-transform:translateY(120vh);
+.loginBubble{
 
-opacity:0;
+    animation:
 
-}
+        breathe 5s ease-in-out infinite,
 
-20%{
-
-opacity:.4;
-
-}
-
-100%{
-
-transform:translateY(-140vh);
-
-opacity:0;
+        heroFloat 8s ease-in-out infinite;
 
 }
 
+/* Side Bubbles */
+
+.registerBubble{
+
+    animation:
+
+        orbitLeft 7s ease-in-out infinite;
+
 }
 
-@keyframes bob{
+.demoBubble{
+
+    animation:
+
+        orbitRight 8s ease-in-out infinite;
+
+}
+
+/* Background Floating Bubbles */
+
+.backgroundBubble{
+
+    animation-name:floatBubble;
+
+    animation-timing-function:linear;
+
+    animation-iteration-count:infinite;
+
+}
+
+/* ASCII Particles */
+
+.asciiParticle{
+
+    position:absolute;
+
+    font-family:monospace;
+
+    color:white;
+
+    opacity:.75;
+
+    pointer-events:none;
+
+    animation:
+
+        drift 6s linear infinite;
+
+}
+
+/* Bubble Inflation */
+
+.inflate{
+
+    animation:
+
+        inflateBubble .8s ease-out forwards;
+
+}
+
+/* Bubble Pop */
+
+.pop{
+
+    animation:
+
+        bubblePop .5s ease-in forwards;
+
+}
+
+/* Stick of Gum */
+
+.stickOfGum{
+
+    animation:
+
+        gumStretch 1.8s ease-in-out infinite;
+
+}
+
+/*=====================================
+KEYFRAMES
+======================================*/
+
+@keyframes heroFloat{
 
 0%{
 
@@ -34,7 +108,7 @@ transform:translateY(0px);
 
 50%{
 
-transform:translateY(-18px);
+transform:translateY(-10px);
 
 }
 
@@ -46,20 +120,230 @@ transform:translateY(0px);
 
 }
 
-.loginBubble{
+@keyframes breathe{
 
-animation:bob 5s ease-in-out infinite;
+0%{
 
-}
-
-.registerBubble{
-
-animation:bob 6s ease-in-out infinite;
+scale:1;
 
 }
 
-.demoBubble{
+50%{
 
-animation:bob 7s ease-in-out infinite;
+scale:1.02;
+
+}
+
+100%{
+
+scale:1;
+
+}
+
+}
+
+@keyframes orbitLeft{
+
+0%{
+
+transform:
+
+translateY(0)
+
+rotate(-2deg);
+
+}
+
+50%{
+
+transform:
+
+translateY(-15px)
+
+rotate(4deg);
+
+}
+
+100%{
+
+transform:
+
+translateY(0)
+
+rotate(-2deg);
+
+}
+
+}
+
+@keyframes orbitRight{
+
+0%{
+
+transform:
+
+translateY(0)
+
+rotate(3deg);
+
+}
+
+50%{
+
+transform:
+
+translateY(-10px)
+
+rotate(-3deg);
+
+}
+
+100%{
+
+transform:
+
+translateY(0)
+
+rotate(3deg);
+
+}
+
+}
+
+@keyframes floatBubble{
+
+0%{
+
+transform:
+
+translateY(110vh)
+
+scale(.3);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:.35;
+
+}
+
+100%{
+
+transform:
+
+translateY(-120vh)
+
+scale(1);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes drift{
+
+0%{
+
+transform:
+
+translate(0,20px);
+
+opacity:0;
+
+}
+
+25%{
+
+opacity:.85;
+
+}
+
+100%{
+
+transform:
+
+translate(-15px,-20px);
+
+opacity:0;
+
+}
+
+}
+
+@keyframes inflateBubble{
+
+0%{
+
+transform:scale(1);
+
+}
+
+30%{
+
+transform:scale(1.08);
+
+}
+
+70%{
+
+transform:scale(1.14);
+
+}
+
+100%{
+
+transform:scale(1.1);
+
+}
+
+}
+
+@keyframes bubblePop{
+
+0%{
+
+transform:scale(1);
+
+opacity:1;
+
+filter:blur(0);
+
+}
+
+100%{
+
+transform:scale(1.5);
+
+opacity:0;
+
+filter:blur(12px);
+
+}
+
+}
+
+@keyframes gumStretch{
+
+0%{
+
+transform:scaleX(.9);
+
+}
+
+50%{
+
+transform:scaleX(1.2);
+
+}
+
+100%{
+
+transform:scaleX(.9);
+
+}
 
 }
